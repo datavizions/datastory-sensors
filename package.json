@@ -42,6 +42,7 @@
 	},
 	"browserslist": "> 0.5%, last 4 versions, not ie <= 11, not ie_mob <= 11",
 	"dependencies": {
+		"@elekcsv/core": "^1.1.1",
 		"fs": "^0.0.1-security",
 		"vitest": "^4.1.9"
 	}
