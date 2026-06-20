@@ -1,5 +1,17 @@
 import fs from 'fs'
 import { fileURLToPath } from 'url'
+import type { Cols } from './charts'
+import {mapCharts} from './charts'
+
+export {mapCharts}
+
+if(process.argv[1] === fileURLToPath(import.meta.url)){
+    const cols: Cols = JSON.parse(fs.readFileSync("src/data/columns.json", "utf8"))
+    const charts = mapCharts(cols)
+    fs.writeFileSync("src/data/charts.json", JSON.stringify(charts, null, 2))
+    console.log("mapper worked: see charts", Object.keys(charts).length)
+}
+
 
 // needs to process the json files and then output data for visualizations in specific format
 
