@@ -94,7 +94,7 @@ export function barList(
         })
 }
 
-// distributed charts 
+// distributed charts check the logic again 
 
 export function distribution(
     col: Col | undefined,
@@ -102,7 +102,7 @@ export function distribution(
         ): {answer: string; label: string; count: number; percent: number}[]{
             if (!col) return[]
             const n = total(col)
-            return col.answers.map(r => ({
+            return col.answers.filter(r => Object.prototype.hasOwnProperty.call(labelMap, r.answer)).map(r => ({
                 answer: r.answer,
                 label: labelMap[r.answer] ?? r.answer,
                 count: r.count,
@@ -194,7 +194,7 @@ export function mapCharts(cols: Cols): Record<string, any> {
             note: 'Mehrfachnennung möglich',
             items: barList(cols, ['f10A1', 'f10A2', 'f10A3', 'f10A5', 'f10A6']),            
         },
-        vetrauenbetreiber: {
+        vertrauenbetreiber: {
             type: 'distribution',
             title: 'Vertrauen in öffentliche vs private Betreiber',
             note: 'Nur die, die Einfluss auf Betreiber bestätigen (f11 = 1)', //wichtig

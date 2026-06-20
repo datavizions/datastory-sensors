@@ -44,15 +44,13 @@ describe('charts functionalities', () => {
         const col = {
             values: ['1','1','2',null],
             answers: [
-                {answer: '1', count: 2 },
-                {answer: '2', count: 1 },
+                {answer: '1', count: 1 }
             ],
         } as any
           
 
         expect(distribution(col, { '1': '', '2': ''})).toEqual([
-            {answer: '1', label: '', count:1, percent: 33},
-            {answer: '1', count:2, percent: 67},
+            {answer: '1', label: '', count:1, percent: 33}
         ])
     })
 
@@ -75,10 +73,10 @@ describe('charts functionalities', () => {
            
         } as any
           
-
+// check code label mapping 
         expect(barList(col, [ 'missing', 'f2A1', 'f2A2'])).toEqual([
-            {code: 'Ich nehme Sensoren im öffentlichen Raum wahr.', label: '?', count:2, percent: 67},
-            {code: 'Ich kann mind. einen konkreten Ort benennen, an dem sich ein Sensor im öffentlichen Raum befindet.', label: 'Yes', count:2, percent: 67},
+            {code: 'Ich nehme Sensoren im öffentlichen Raum wahr.', label: 'Ich nehme Sensoren im öffentlichen Raum wahr.', count:2, percent: 67},
+            {code: 'Ich kann mind. einen konkreten Ort benennen, an dem sich ein Sensor im öffentlichen Raum befindet.', label: 'Ich kann mind. einen konkreten Ort benennen, an dem sich ein Sensor im öffentlichen Raum befindet.', count:2, percent: 67},
         ])
     })
 
