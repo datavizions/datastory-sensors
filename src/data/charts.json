@@ -1,0 +1,884 @@
+{
+  "wahrnehmung": {
+    "type": "bar",
+    "title": "Wahrnehmung von Sensoren im öffentlichen Raum",
+    "note": "Mehrfachnennung möglich",
+    "items": [
+      {
+        "code": "f2A1",
+        "label": "Unbekannt",
+        "count": 5,
+        "percent": 45
+      },
+      {
+        "code": "f2A2",
+        "label": "Unbekannt",
+        "count": 3,
+        "percent": 27
+      },
+      {
+        "code": "f2A3",
+        "label": "Unbekannt",
+        "count": 2,
+        "percent": 18
+      },
+      {
+        "code": "f2A5",
+        "label": "Unbekannt",
+        "count": 1,
+        "percent": 9
+      }
+    ]
+  },
+  "sensortypen": {
+    "type": "bar",
+    "title": "Bekanntheitsgrad nach Sensortyp",
+    "note": "Mehrfachnennung möglich",
+    "items": [
+      {
+        "code": "f3A1",
+        "label": "Unbekannt",
+        "count": 7,
+        "percent": 64
+      },
+      {
+        "code": "f3A2",
+        "label": "Unbekannt",
+        "count": 10,
+        "percent": 91
+      },
+      {
+        "code": "f3A3",
+        "label": "Unbekannt",
+        "count": 3,
+        "percent": 27
+      },
+      {
+        "code": "f3A5",
+        "label": "Unbekannt",
+        "count": 0,
+        "percent": 0
+      },
+      {
+        "code": "f3A6",
+        "label": "Unbekannt",
+        "count": 0,
+        "percent": 0
+      }
+    ]
+  },
+  "wissensensoren": {
+    "type": "bar",
+    "title": "Wissen über die Funtionsweise von Sensoren",
+    "note": "Mehrfachnennung möglich",
+    "items": [
+      {
+        "code": "f4A1",
+        "label": "Unbekannt",
+        "count": 9,
+        "percent": 82
+      },
+      {
+        "code": "f4A2",
+        "label": "Unbekannt",
+        "count": 2,
+        "percent": 18
+      },
+      {
+        "code": "f4A3",
+        "label": "Unbekannt",
+        "count": 7,
+        "percent": 64
+      },
+      {
+        "code": "f4A5",
+        "label": "Unbekannt",
+        "count": 9,
+        "percent": 82
+      },
+      {
+        "code": "f4A6",
+        "label": "Unbekannt",
+        "count": 2,
+        "percent": 18
+      },
+      {
+        "code": "f4A7",
+        "label": "Unbekannt",
+        "count": 7,
+        "percent": 64
+      },
+      {
+        "code": "f4A8",
+        "label": "Unbekannt",
+        "count": 1,
+        "percent": 9
+      },
+      {
+        "code": "f4A9",
+        "label": "Unbekannt",
+        "count": 0,
+        "percent": 0
+      },
+      {
+        "code": "f4A10",
+        "label": "Unbekannt",
+        "count": 0,
+        "percent": 0
+      }
+    ]
+  },
+  "einstellungtechnik": {
+    "type": "distribution",
+    "title": "Einstellung zu digitalen Technologien",
+    "note": "Mehrfachnennung möglich",
+    "items": [
+      {
+        "answer": "2",
+        "label": "Eher positiv",
+        "count": 7,
+        "percent": 64
+      },
+      {
+        "answer": "1",
+        "label": "Sehr positiv",
+        "count": 2,
+        "percent": 18
+      },
+      {
+        "answer": "4",
+        "label": "Sehr negativ",
+        "count": 1,
+        "percent": 9
+      }
+    ]
+  },
+  "überwachungsgefühl": {
+    "type": "distribution",
+    "title": "Überwachungsgefühl durch Sensoren",
+    "description": "Anteil: trifft voll zu + trifft eher zu",
+    "percent": 73,
+    "n": 11
+  },
+  "befindlichkeit": {
+    "type": "bargrouped",
+    "title": "Gefühl gegenüber Sensoren im öffentlichen Raum",
+    "answerLabels": {
+      "1": "Trifft voll und ganz zu",
+      "2": "Trifft eher zu",
+      "3": "Trifft eher weniger zu",
+      "4": "Triff überhaupt nicht zu",
+      "9": "Weiß nicht/Keine Angabe"
+    },
+    "items": [
+      {
+        "code": "f6A1_1",
+        "label": "f6A1_1",
+        "distribution": [
+          {
+            "answer": "1",
+            "label": "Trifft voll und ganz zu",
+            "count": 3,
+            "percent": 27
+          },
+          {
+            "answer": "2",
+            "label": "Trifft eher zu",
+            "count": 3,
+            "percent": 27
+          },
+          {
+            "answer": "4",
+            "label": "Triff überhaupt nicht zu",
+            "count": 3,
+            "percent": 27
+          },
+          {
+            "answer": "3",
+            "label": "Trifft eher weniger zu",
+            "count": 2,
+            "percent": 18
+          }
+        ]
+      },
+      {
+        "code": "f6A2_1",
+        "label": "f6A2_1",
+        "distribution": [
+          {
+            "answer": "2",
+            "label": "Trifft eher zu",
+            "count": 4,
+            "percent": 36
+          },
+          {
+            "answer": "3",
+            "label": "Trifft eher weniger zu",
+            "count": 3,
+            "percent": 27
+          },
+          {
+            "answer": "1",
+            "label": "Trifft voll und ganz zu",
+            "count": 2,
+            "percent": 18
+          },
+          {
+            "answer": "4",
+            "label": "Triff überhaupt nicht zu",
+            "count": 2,
+            "percent": 18
+          }
+        ]
+      },
+      {
+        "code": "f6A3_1",
+        "label": "f6A3_1",
+        "distribution": [
+          {
+            "answer": "2",
+            "label": "Trifft eher zu",
+            "count": 7,
+            "percent": 64
+          },
+          {
+            "answer": "3",
+            "label": "Trifft eher weniger zu",
+            "count": 2,
+            "percent": 18
+          },
+          {
+            "answer": "1",
+            "label": "Trifft voll und ganz zu",
+            "count": 1,
+            "percent": 9
+          },
+          {
+            "answer": "9",
+            "label": "Weiß nicht/Keine Angabe",
+            "count": 1,
+            "percent": 9
+          }
+        ]
+      },
+      {
+        "code": "f6A4_1",
+        "label": "f6A4_1",
+        "distribution": [
+          {
+            "answer": "1",
+            "label": "Trifft voll und ganz zu",
+            "count": 5,
+            "percent": 45
+          },
+          {
+            "answer": "2",
+            "label": "Trifft eher zu",
+            "count": 2,
+            "percent": 18
+          },
+          {
+            "answer": "3",
+            "label": "Trifft eher weniger zu",
+            "count": 2,
+            "percent": 18
+          },
+          {
+            "answer": "4",
+            "label": "Triff überhaupt nicht zu",
+            "count": 1,
+            "percent": 9
+          },
+          {
+            "answer": "9",
+            "label": "Weiß nicht/Keine Angabe",
+            "count": 1,
+            "percent": 9
+          }
+        ]
+      },
+      {
+        "code": "f6A5_1",
+        "label": "f6A5_1",
+        "distribution": [
+          {
+            "answer": "2",
+            "label": "Trifft eher zu",
+            "count": 3,
+            "percent": 27
+          },
+          {
+            "answer": "3",
+            "label": "Trifft eher weniger zu",
+            "count": 3,
+            "percent": 27
+          },
+          {
+            "answer": "1",
+            "label": "Trifft voll und ganz zu",
+            "count": 2,
+            "percent": 18
+          },
+          {
+            "answer": "4",
+            "label": "Triff überhaupt nicht zu",
+            "count": 2,
+            "percent": 18
+          },
+          {
+            "answer": "9",
+            "label": "Weiß nicht/Keine Angabe",
+            "count": 1,
+            "percent": 9
+          }
+        ]
+      }
+    ]
+  },
+  "akzeptanzmaßnahmen": {
+    "type": "bargrouped",
+    "title": "Einfluss von Maßnahmen auf Zustimmung zu Sensoren",
+    "answerLabels": {
+      "1": "Erhöht Zustimmung",
+      "2": "Kein Unterschied",
+      "3": "Verringert Zustimmung",
+      "4": "Weiß nicht / Keine Angabe"
+    },
+    "items": [
+      {
+        "code": "f8A1_1",
+        "label": "f8A1_1",
+        "distribution": [
+          {
+            "answer": "1",
+            "label": "Erhöht Zustimmung",
+            "count": 7,
+            "percent": 64
+          },
+          {
+            "answer": "2",
+            "label": "Kein Unterschied",
+            "count": 3,
+            "percent": 27
+          },
+          {
+            "answer": "3",
+            "label": "Verringert Zustimmung",
+            "count": 1,
+            "percent": 9
+          }
+        ]
+      },
+      {
+        "code": "f8A2_1",
+        "label": "f8A2_1",
+        "distribution": [
+          {
+            "answer": "1",
+            "label": "Erhöht Zustimmung",
+            "count": 7,
+            "percent": 64
+          },
+          {
+            "answer": "2",
+            "label": "Kein Unterschied",
+            "count": 3,
+            "percent": 27
+          }
+        ]
+      },
+      {
+        "code": "f8A3_1",
+        "label": "f8A3_1",
+        "distribution": [
+          {
+            "answer": "1",
+            "label": "Erhöht Zustimmung",
+            "count": 5,
+            "percent": 45
+          },
+          {
+            "answer": "2",
+            "label": "Kein Unterschied",
+            "count": 5,
+            "percent": 45
+          },
+          {
+            "answer": "3",
+            "label": "Verringert Zustimmung",
+            "count": 1,
+            "percent": 9
+          }
+        ]
+      },
+      {
+        "code": "f8A4_1",
+        "label": "f8A4_1",
+        "distribution": [
+          {
+            "answer": "1",
+            "label": "Erhöht Zustimmung",
+            "count": 7,
+            "percent": 64
+          },
+          {
+            "answer": "2",
+            "label": "Kein Unterschied",
+            "count": 4,
+            "percent": 36
+          }
+        ]
+      },
+      {
+        "code": "f8A5_1",
+        "label": "f8A5_1",
+        "distribution": [
+          {
+            "answer": "1",
+            "label": "Erhöht Zustimmung",
+            "count": 8,
+            "percent": 73
+          },
+          {
+            "answer": "2",
+            "label": "Kein Unterschied",
+            "count": 3,
+            "percent": 27
+          }
+        ]
+      },
+      {
+        "code": "f8A6_1",
+        "label": "f8A6_1",
+        "distribution": [
+          {
+            "answer": "1",
+            "label": "Erhöht Zustimmung",
+            "count": 6,
+            "percent": 55
+          },
+          {
+            "answer": "2",
+            "label": "Kein Unterschied",
+            "count": 5,
+            "percent": 45
+          }
+        ]
+      },
+      {
+        "code": "f8A7_1",
+        "label": "f8A7_1",
+        "distribution": [
+          {
+            "answer": "2",
+            "label": "Kein Unterschied",
+            "count": 6,
+            "percent": 55
+          },
+          {
+            "answer": "1",
+            "label": "Erhöht Zustimmung",
+            "count": 3,
+            "percent": 27
+          },
+          {
+            "answer": "3",
+            "label": "Verringert Zustimmung",
+            "count": 1,
+            "percent": 9
+          }
+        ]
+      },
+      {
+        "code": "f8A8_1",
+        "label": "f8A8_1",
+        "distribution": [
+          {
+            "answer": "2",
+            "label": "Kein Unterschied",
+            "count": 8,
+            "percent": 73
+          },
+          {
+            "answer": "1",
+            "label": "Erhöht Zustimmung",
+            "count": 3,
+            "percent": 27
+          }
+        ]
+      },
+      {
+        "code": "f8A9_1",
+        "label": "f8A9_1",
+        "distribution": [
+          {
+            "answer": "1",
+            "label": "Erhöht Zustimmung",
+            "count": 6,
+            "percent": 55
+          },
+          {
+            "answer": "2",
+            "label": "Kein Unterschied",
+            "count": 5,
+            "percent": 45
+          }
+        ]
+      }
+    ]
+  },
+  "datenschutzhaltung": {
+    "type": "bar",
+    "title": "Haltung zu Datenschutz und Datennutzung",
+    "note": "Mehrfachnennung möglich",
+    "items": [
+      {
+        "code": "f10A1",
+        "label": "Unbekannt",
+        "count": 8,
+        "percent": 73
+      },
+      {
+        "code": "f10A2",
+        "label": "Unbekannt",
+        "count": 5,
+        "percent": 45
+      },
+      {
+        "code": "f10A3",
+        "label": "Unbekannt",
+        "count": 5,
+        "percent": 45
+      },
+      {
+        "code": "f10A5",
+        "label": "Unbekannt",
+        "count": 0,
+        "percent": 0
+      },
+      {
+        "code": "f10A6",
+        "label": "Unbekannt",
+        "count": 0,
+        "percent": 0
+      }
+    ]
+  },
+  "vertrauenbetreiber": {
+    "type": "distribution",
+    "title": "Vertrauen in öffentliche vs private Betreiber",
+    "note": "Nur die, die Einfluss auf Betreiber bestätigen (f11 = 1)",
+    "description": "Anteil: trifft voll zu + trifft eher zu",
+    "items": [
+      {
+        "answer": "1",
+        "label": "Nur privaten Betreibern",
+        "count": 9,
+        "percent": 82
+      },
+      {
+        "answer": "2",
+        "label": "Eher privaten Betreibern",
+        "count": 1,
+        "percent": 9
+      },
+      {
+        "answer": "3",
+        "label": "Eher öffentlichen Betreibern",
+        "count": 1,
+        "percent": 9
+      }
+    ]
+  },
+  "infobedürfnis": {
+    "type": "stat",
+    "title": "Wunsch nach mehr Informationen zur Datenerhebung",
+    "description": "Anteil trifft voll zu + trifft eher zu",
+    "percent": 91,
+    "n": 11
+  },
+  "kamerabedeutung": {
+    "type": "distribution",
+    "title": "Was bedeutet mehr Videoüberwachung",
+    "items": [
+      {
+        "answer": "1",
+        "label": "Eher Sicherheit",
+        "count": 5,
+        "percent": 45
+      },
+      {
+        "answer": "3",
+        "label": "Beides",
+        "count": 3,
+        "percent": 27
+      },
+      {
+        "answer": "4",
+        "label": "Weder noch",
+        "count": 2,
+        "percent": 18
+      },
+      {
+        "answer": "2",
+        "label": "Eher Eingriff in Freiheitsrecht",
+        "count": 1,
+        "percent": 9
+      }
+    ]
+  },
+  "kamerazustimmungort": {
+    "type": "bargrouped",
+    "title": "Zustimmung zu Videoüberwachung je nach Ort",
+    "answerLabels": {
+      "1": "Stimme uneingeschränkt zu",
+      "2": "Stimmer eingeschränkt zu",
+      "3": "Lehne es uneingeschränkt ab",
+      "4": "Weißß nicht / Keine Angabe"
+    },
+    "items": [
+      {
+        "code": "f20A1_1",
+        "label": "f20A1_1",
+        "distribution": [
+          {
+            "answer": "1",
+            "label": "Stimme uneingeschränkt zu",
+            "count": 4,
+            "percent": 36
+          },
+          {
+            "answer": "3",
+            "label": "Lehne es uneingeschränkt ab",
+            "count": 4,
+            "percent": 36
+          },
+          {
+            "answer": "2",
+            "label": "Stimmer eingeschränkt zu",
+            "count": 2,
+            "percent": 18
+          }
+        ]
+      },
+      {
+        "code": "f20A2_1",
+        "label": "f20A2_1",
+        "distribution": [
+          {
+            "answer": "1",
+            "label": "Stimme uneingeschränkt zu",
+            "count": 7,
+            "percent": 64
+          },
+          {
+            "answer": "2",
+            "label": "Stimmer eingeschränkt zu",
+            "count": 3,
+            "percent": 27
+          },
+          {
+            "answer": "3",
+            "label": "Lehne es uneingeschränkt ab",
+            "count": 1,
+            "percent": 9
+          }
+        ]
+      },
+      {
+        "code": "f20A3_1",
+        "label": "f20A3_1",
+        "distribution": [
+          {
+            "answer": "1",
+            "label": "Stimme uneingeschränkt zu",
+            "count": 8,
+            "percent": 73
+          },
+          {
+            "answer": "2",
+            "label": "Stimmer eingeschränkt zu",
+            "count": 3,
+            "percent": 27
+          }
+        ]
+      },
+      {
+        "code": "f20A4_1",
+        "label": "f20A4_1",
+        "distribution": [
+          {
+            "answer": "1",
+            "label": "Stimme uneingeschränkt zu",
+            "count": 6,
+            "percent": 55
+          },
+          {
+            "answer": "2",
+            "label": "Stimmer eingeschränkt zu",
+            "count": 4,
+            "percent": 36
+          },
+          {
+            "answer": "3",
+            "label": "Lehne es uneingeschränkt ab",
+            "count": 1,
+            "percent": 9
+          }
+        ]
+      },
+      {
+        "code": "f20A5_1",
+        "label": "f20A5_1",
+        "distribution": [
+          {
+            "answer": "1",
+            "label": "Stimme uneingeschränkt zu",
+            "count": 9,
+            "percent": 82
+          },
+          {
+            "answer": "2",
+            "label": "Stimmer eingeschränkt zu",
+            "count": 2,
+            "percent": 18
+          }
+        ]
+      },
+      {
+        "code": "f20A6_1",
+        "label": "f20A6_1",
+        "distribution": [
+          {
+            "answer": "1",
+            "label": "Stimme uneingeschränkt zu",
+            "count": 7,
+            "percent": 64
+          },
+          {
+            "answer": "2",
+            "label": "Stimmer eingeschränkt zu",
+            "count": 4,
+            "percent": 36
+          }
+        ]
+      },
+      {
+        "code": "f20A7_1",
+        "label": "f20A7_1",
+        "distribution": [
+          {
+            "answer": "2",
+            "label": "Stimmer eingeschränkt zu",
+            "count": 6,
+            "percent": 55
+          },
+          {
+            "answer": "3",
+            "label": "Lehne es uneingeschränkt ab",
+            "count": 4,
+            "percent": 36
+          }
+        ]
+      },
+      {
+        "code": "f20A8_1",
+        "label": "f20A8_1",
+        "distribution": [
+          {
+            "answer": "1",
+            "label": "Stimme uneingeschränkt zu",
+            "count": 9,
+            "percent": 82
+          },
+          {
+            "answer": "2",
+            "label": "Stimmer eingeschränkt zu",
+            "count": 2,
+            "percent": 18
+          }
+        ]
+      },
+      {
+        "code": "f20A9_1",
+        "label": "f20A9_1",
+        "distribution": [
+          {
+            "answer": "2",
+            "label": "Stimmer eingeschränkt zu",
+            "count": 6,
+            "percent": 55
+          },
+          {
+            "answer": "1",
+            "label": "Stimme uneingeschränkt zu",
+            "count": 4,
+            "percent": 36
+          }
+        ]
+      },
+      {
+        "code": "f20A10_1",
+        "label": "f20A10_1",
+        "distribution": [
+          {
+            "answer": "2",
+            "label": "Stimmer eingeschränkt zu",
+            "count": 8,
+            "percent": 73
+          },
+          {
+            "answer": "3",
+            "label": "Lehne es uneingeschränkt ab",
+            "count": 2,
+            "percent": 18
+          },
+          {
+            "answer": "1",
+            "label": "Stimme uneingeschränkt zu",
+            "count": 1,
+            "percent": 9
+          }
+        ]
+      },
+      {
+        "code": "f20A11_1",
+        "label": "f20A11_1",
+        "distribution": [
+          {
+            "answer": "3",
+            "label": "Lehne es uneingeschränkt ab",
+            "count": 7,
+            "percent": 64
+          },
+          {
+            "answer": "2",
+            "label": "Stimmer eingeschränkt zu",
+            "count": 3,
+            "percent": 27
+          },
+          {
+            "answer": "1",
+            "label": "Stimme uneingeschränkt zu",
+            "count": 1,
+            "percent": 9
+          }
+        ]
+      }
+    ]
+  },
+  "kamerabedenken": {
+    "type": "stat",
+    "title": "Bedenklichkeit intelligenter Kamerasysteme",
+    "description": "Anteil trifft voll zu + trifft eher zu",
+    "percent": 64,
+    "n": 11
+  },
+  "verhaltensanpassung": {
+    "type": "stat",
+    "title": "Meidet Orte mit Videoüberwachung",
+    "description": "Anteil immer/oft + gelegentlich",
+    "percent": 18,
+    "n": 11
+  }
+}
