@@ -12,13 +12,13 @@
       },
       {
         "code": "f2A2",
-        "label": "-\tUmweltsensoren",
+        "label": "-\tIch kann mind. einen konkreten Ort benennen, an dem sich ein Sensor im öffentlichen Raum befindet.",
         "count": 3,
         "percent": 27
       },
       {
         "code": "f2A3",
-        "label": "-\tSensoren zur Messung von Prozessen",
+        "label": "-\tIch nehme in den vergangenen ein / zwei Jahren mehr Sensoren im öffentlichen Raum wahr als davor.",
         "count": 2,
         "percent": 18
       },
@@ -43,13 +43,13 @@
       },
       {
         "code": "f3A2",
-        "label": "f3A2",
+        "label": "-\tUmweltsensoren",
         "count": 10,
         "percent": 91
       },
       {
         "code": "f3A3",
-        "label": "f3A3",
+        "label": "-\tSensoren zur Messung von Prozessen",
         "count": 3,
         "percent": 27
       },
@@ -646,7 +646,7 @@
     ]
   },
   "kamerazustimmungort": {
-    "type": "bargrouped",
+    "type": "bar",
     "title": "Zustimmung zu Videoüberwachung je nach Ort",
     "answerLabels": {
       "1": "Stimme uneingeschränkt zu",
@@ -658,248 +658,68 @@
       {
         "code": "f20A1_1",
         "label": "Vor Versorgungsunternehmen wie bspw. Stadtwerke, E-Werke",
-        "distribution": [
-          {
-            "answer": "1",
-            "label": "Stimme uneingeschränkt zu",
-            "count": 4,
-            "percent": 36
-          },
-          {
-            "answer": "3",
-            "label": "Lehne es uneingeschränkt ab",
-            "count": 4,
-            "percent": 36
-          },
-          {
-            "answer": "2",
-            "label": "Stimmer eingeschränkt zu",
-            "count": 2,
-            "percent": 18
-          },
-          {
-            "answer": "9",
-            "label": "9",
-            "count": 1,
-            "percent": 9
-          }
-        ]
+        "count": 6,
+        "percent": 55
       },
       {
         "code": "f20A2_1",
         "label": "Vor Gerichtsgebäude, Rathäuser, Bürgerämter",
-        "distribution": [
-          {
-            "answer": "1",
-            "label": "Stimme uneingeschränkt zu",
-            "count": 7,
-            "percent": 64
-          },
-          {
-            "answer": "2",
-            "label": "Stimmer eingeschränkt zu",
-            "count": 3,
-            "percent": 27
-          },
-          {
-            "answer": "3",
-            "label": "Lehne es uneingeschränkt ab",
-            "count": 1,
-            "percent": 9
-          }
-        ]
+        "count": 10,
+        "percent": 91
       },
       {
         "code": "f20A3_1",
         "label": "BodyCams an Einsatzkräften",
-        "distribution": [
-          {
-            "answer": "1",
-            "label": "Stimme uneingeschränkt zu",
-            "count": 8,
-            "percent": 73
-          },
-          {
-            "answer": "2",
-            "label": "Stimmer eingeschränkt zu",
-            "count": 3,
-            "percent": 27
-          }
-        ]
+        "count": 11,
+        "percent": 100
       },
       {
         "code": "f20A4_1",
         "label": "Vor Schulen",
-        "distribution": [
-          {
-            "answer": "1",
-            "label": "Stimme uneingeschränkt zu",
-            "count": 6,
-            "percent": 55
-          },
-          {
-            "answer": "2",
-            "label": "Stimmer eingeschränkt zu",
-            "count": 4,
-            "percent": 36
-          },
-          {
-            "answer": "3",
-            "label": "Lehne es uneingeschränkt ab",
-            "count": 1,
-            "percent": 9
-          }
-        ]
+        "count": 10,
+        "percent": 91
       },
       {
         "code": "f20A5_1",
         "label": "Im Verkehr/Kreuzungen (fließend, ruhend)",
-        "distribution": [
-          {
-            "answer": "1",
-            "label": "Stimme uneingeschränkt zu",
-            "count": 9,
-            "percent": 82
-          },
-          {
-            "answer": "2",
-            "label": "Stimmer eingeschränkt zu",
-            "count": 2,
-            "percent": 18
-          }
-        ]
+        "count": 11,
+        "percent": 100
       },
       {
         "code": "f20A6_1",
         "label": "An öffentliche Plätze und Parks",
-        "distribution": [
-          {
-            "answer": "1",
-            "label": "Stimme uneingeschränkt zu",
-            "count": 7,
-            "percent": 64
-          },
-          {
-            "answer": "2",
-            "label": "Stimmer eingeschränkt zu",
-            "count": 4,
-            "percent": 36
-          }
-        ]
+        "count": 11,
+        "percent": 100
       },
       {
         "code": "f20A7_1",
         "label": "Vor öffentlichen Toiletten/ vor Umkleidekabinen",
-        "distribution": [
-          {
-            "answer": "2",
-            "label": "Stimmer eingeschränkt zu",
-            "count": 6,
-            "percent": 55
-          },
-          {
-            "answer": "3",
-            "label": "Lehne es uneingeschränkt ab",
-            "count": 4,
-            "percent": 36
-          },
-          {
-            "answer": "9",
-            "label": "9",
-            "count": 1,
-            "percent": 9
-          }
-        ]
+        "count": 6,
+        "percent": 55
       },
       {
         "code": "f20A8_1",
         "label": "Im öffentlichen Nahverkehr und auf Bahnhöfen und Haltestellen",
-        "distribution": [
-          {
-            "answer": "1",
-            "label": "Stimme uneingeschränkt zu",
-            "count": 9,
-            "percent": 82
-          },
-          {
-            "answer": "2",
-            "label": "Stimmer eingeschränkt zu",
-            "count": 2,
-            "percent": 18
-          }
-        ]
+        "count": 11,
+        "percent": 100
       },
       {
         "code": "f20A9_1",
         "label": "Auf Marktplätzen/in Einkaufsstraßen/Einkaufszentren",
-        "distribution": [
-          {
-            "answer": "2",
-            "label": "Stimmer eingeschränkt zu",
-            "count": 6,
-            "percent": 55
-          },
-          {
-            "answer": "1",
-            "label": "Stimme uneingeschränkt zu",
-            "count": 4,
-            "percent": 36
-          },
-          {
-            "answer": "9",
-            "label": "9",
-            "count": 1,
-            "percent": 9
-          }
-        ]
+        "count": 10,
+        "percent": 91
       },
       {
         "code": "f20A10_1",
         "label": "Vor einzelnstehenden Geschäften bzw. Gastronomie",
-        "distribution": [
-          {
-            "answer": "2",
-            "label": "Stimmer eingeschränkt zu",
-            "count": 8,
-            "percent": 73
-          },
-          {
-            "answer": "3",
-            "label": "Lehne es uneingeschränkt ab",
-            "count": 2,
-            "percent": 18
-          },
-          {
-            "answer": "1",
-            "label": "Stimme uneingeschränkt zu",
-            "count": 1,
-            "percent": 9
-          }
-        ]
+        "count": 9,
+        "percent": 82
       },
       {
         "code": "f20A11_1",
         "label": "In Wohnstraßen/Wohnvierteln",
-        "distribution": [
-          {
-            "answer": "3",
-            "label": "Lehne es uneingeschränkt ab",
-            "count": 7,
-            "percent": 64
-          },
-          {
-            "answer": "2",
-            "label": "Stimmer eingeschränkt zu",
-            "count": 3,
-            "percent": 27
-          },
-          {
-            "answer": "1",
-            "label": "Stimme uneingeschränkt zu",
-            "count": 1,
-            "percent": 9
-          }
-        ]
+        "count": 4,
+        "percent": 36
       }
     ]
   },

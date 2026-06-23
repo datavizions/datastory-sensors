@@ -94,7 +94,39 @@ export function barList(
         })
 }
 
-// distributed charts check the logic again 
+export function multibarList(
+    cols: Cols,
+    codes: string[]) {
+        return codes
+        .filter(code => cols[code])
+        .map(code => {
+            const col = cols[code]
+            const n = total(col)
+            const count = countAnswer(col, '1') + countAnswer(col, '2')
+
+            return {
+                code,
+                label: col.label,
+                count, 
+                percent: n > 0 ? Math.round((count/n)*100) : 0    
+            }
+        })
+    }
+
+export function answerbarList(
+    col: Col | undefined,
+    labelMap: Record<string, string> = {}
+) {
+    if (!col) return []
+
+    const n = total(col)
+
+    return col.answers.map(a => ({
+        label: labelMap[a.answer] ?? a.answer,
+        count: a.count,
+        percent: n > 0 ? Math.round((a.count/n)*100) : 0
+    }))
+}
 
 export function distribution(
     col: Col | undefined,
@@ -160,10 +192,10 @@ export function mapCharts(cols: Cols): Record<string, any> {
             items: barList(cols, ['f4A1', 'f4A2', 'f4A3', 'f4A5', 'f4A6', 'f4A7', 'f4A8', 'f4A9', 'f4A10']),            
         },
         einstellungtechnik: {
-            type: 'distribution',
+            type: 'bar',
             title: 'Einstellung zu digitalen Technologien',
             note: 'Mehrfachnennung möglich',
-            items: distribution(col('f1'), {'1': 'Sehr positiv', '2': 'Eher positiv', '3': 'Eher negativ', '4': 'Sehr negativ', '9': 'Weiß nicht / keine Angabe'}),            
+            items: answerbarList(col('f1'), {'1': 'Sehr positiv', '2': 'Eher positiv', '3': 'Eher negativ', '4': 'Sehr negativ', '9': 'Weiß nicht / keine Angabe'})            
         },
         überwachungsgefühl: {
             type: 'distribution',
@@ -220,12 +252,11 @@ export function mapCharts(cols: Cols): Record<string, any> {
             }),    
         },
         kamerazustimmungort: {
-            type: 'bargrouped',
+            type: 'bar',
             title: 'Zustimmung zu Videoüberwachung je nach Ort',
             answerLabels: Zustimmung,
-            items: ['f20A1_1', 'f20A2_1','f20A3_1','f20A4_1', 'f20A5_1', 'f20A6_1', 'f20A7_1', 'f20A8_1', 'f20A9_1', 'f20A10_1', 'f20A11_1']
-            .filter(c => col(c))
-            .map(code => ({code, label: col(code).label, distribution: distribution(col(code), Zustimmung)}))
+            items: multibarList(cols, ['f20A1_1', 'f20A2_1','f20A3_1','f20A4_1', 'f20A5_1', 'f20A6_1', 'f20A7_1', 'f20A8_1', 'f20A9_1', 'f20A10_1', 'f20A11_1'])
+
         },
         kamerabedenken: {
             type: 'stat',

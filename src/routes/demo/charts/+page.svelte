@@ -68,7 +68,7 @@
 			<Donut title = {charts.kamerabedeutung.title} items={charts.kamerabedeutung.items}  />
 		</div>
 		<div class="charts">
-			<BarChart title = {charts.kamerazustimmungort.title} items={charts.kamerazustimmungort.items.map(item => ({ label: item.label, percent: item.distribution.find(d => d.label === '1')?.percent ?? 0, count: item.distribution.find(d => d.label === '1')?.count ?? 0 }))} note = {charts.kamerazustimmungort.note} color = "var(--purple)" />
+			<BarChart title = {charts.kamerazustimmungort.title} items={charts.kamerazustimmungort.items} note = {charts.kamerazustimmungort.note} color = "var(--purple)" />
 		</div>
 		</div>
 	</section>

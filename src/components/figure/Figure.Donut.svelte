@@ -1,4 +1,5 @@
-// define what donut should show
+// define what bars should show
+// horizontal setup + vertical setup
 
 <script lang="ts">
     import {arc, pie} from 'd3-shape'
@@ -80,7 +81,7 @@
 <style>
 
     .donut {
-        font-size: 9rem;
+        font-size: 0.9rem;
     }
 
     .donut-title {
@@ -116,13 +117,13 @@
         font-size: 0.9em;
     }
 
-   /*  .donut-swatch {
+    .donut-legend-swatch {
         display: inline-block;
         width: 1em;
         height: 1em;
         border-radius: 0.25em;
         flex-shrink: 0;
-    } */
+    }
 
     .donut-layout {
         display: flex;
