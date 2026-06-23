@@ -144,7 +144,7 @@
     ]
   },
   "f1": {
-    "label": "Frage",
+    "label": "Frage 1",
     "category": "Einstellung zu Technik",
     "description": "Wie würden Sie Ihre Einstellung gegenüber neuen digitalen Technologien im Allgemeinen beschreiben? Bitte benutzen Sie dafür eine Skala von 1 „Sehr positiv“, 2 „Eher positiv“, 3 „Eher negativ“ bis 4 „Sehr negativ“.",
     "values": [
@@ -180,7 +180,7 @@
     ]
   },
   "f2_question": {
-    "label": "Frage",
+    "label": "Frage 2",
     "category": "Wissen",
     "description": "Ich lese Ihnen nun einige Aussagen zu Sensoren im öffentlichen Raum vor. Welche davon treffen auf Sie zu?",
     "values": [
@@ -227,9 +227,9 @@
     ]
   },
   "f2A2": {
-    "label": "-\tUmweltsensoren",
+    "label": "-\tIch kann mind. einen konkreten Ort benennen, an dem sich ein Sensor im öffentlichen Raum befindet.",
     "category": "Wissen",
-    "description": "-\tSensoren zur Messung von Prozessen [INT bspw. In Strom-, Gas-, Wassernetzen; Mülltonnen...] (f2A3)",
+    "description": "-\tIch nehme in den vergangenen ein / zwei Jahren mehr Sensoren im öffentlichen Raum wahr als davor. (f2A3)",
     "values": [
       "0",
       "1",
@@ -255,9 +255,9 @@
     ]
   },
   "f2A3": {
-    "label": "-\tSensoren zur Messung von Prozessen",
+    "label": "-\tIch nehme in den vergangenen ein / zwei Jahren mehr Sensoren im öffentlichen Raum wahr als davor.",
     "category": "Wissen",
-    "description": "-\tKameras zur Beobachtung des öffentlichen Raumes (f3A4)",
+    "description": "-\tNichts davon (f2A4)",
     "values": [
       "0",
       "1",
@@ -339,8 +339,8 @@
     ]
   },
   "f3_question": {
-    "label": "f3_question",
-    "category": "Unbekannt",
+    "label": "Frage 3",
+    "category": "Wissen",
     "description": null,
     "values": [
       null,
@@ -360,7 +360,7 @@
   "f3A1": {
     "label": "-\tSensoren zur Messung von bewegten Objekten",
     "category": "Wissen",
-    "description": "-\tUmweltsensoren [INT Bspw. Luftqualität, Temperatur, Pegelstände...] (f2A2)",
+    "description": "-\tUmweltsensoren [INT Bspw. Luftqualität, Temperatur, Pegelstände...] (f3A2)",
     "values": [
       "1",
       "0",
@@ -386,9 +386,9 @@
     ]
   },
   "f3A2": {
-    "label": "f3A2",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tUmweltsensoren",
+    "category": "Wissen",
+    "description": "-\tSensoren zur Messung von Prozessen [INT bspw. In Strom-, Gas-, Wassernetzen; Mülltonnen...] (f3A3)",
     "values": [
       "1",
       "1",
@@ -414,9 +414,9 @@
     ]
   },
   "f3A3": {
-    "label": "f3A3",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tSensoren zur Messung von Prozessen",
+    "category": "Wissen",
+    "description": "-\tKameras zur Beobachtung des öffentlichen Raumes (f3A4)",
     "values": [
       "1",
       "0",
@@ -518,9 +518,9 @@
     ]
   },
   "f4_question": {
-    "label": "f4_question",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Frage 4",
+    "category": "Wissen",
+    "description": "Im Folgenden interessieren wir uns für Ihr Verständnis über die Funktionsweise von Sensoren. Es geht nicht um richtig oder falsch, sondern einfach um Ihre Vorstellung davon. Ich lese Ihnen nun einige Aussagen vor. Welche davon treffen Ihrer Ansicht nach zu?",
     "values": [
       null,
       null,
@@ -833,7 +833,7 @@
     ]
   },
   "f5": {
-    "label": "Frage",
+    "label": "Frage 5",
     "category": "Befindlichkeit",
     "description": null,
     "values": [
@@ -865,7 +865,7 @@
     ]
   },
   "f6_question": {
-    "label": "Frage",
+    "label": "Frage 6",
     "category": "Befindlichkeit",
     "description": null,
     "values": [
@@ -1072,7 +1072,7 @@
     ]
   },
   "f7": {
-    "label": "Frage",
+    "label": "Frage 7",
     "category": "Befindlichkeit",
     "description": "Wie beurteilen Sie die Anzahl der Geräte mit Sensoren im öffentlichen Raum?",
     "values": [
@@ -1104,7 +1104,7 @@
     ]
   },
   "f8_question": {
-    "label": "Frage",
+    "label": "Frage 8",
     "category": "Befindlichkeit",
     "description": "Welchen Einfluss hätten die folgenden Maßnahmen auf Ihre Zustimmung  zu Sensoren im öffentlichen Raum. Bitte antworten Sie mit Hilfe einer Skala, bei der 1 bedeutet: „Würde meine Zustimmung erhöhen“, 2 „Würde keinen Unterschied machen“, 3 „Würde meine Zustimmung verringern“.",
     "values": [
@@ -1395,7 +1395,7 @@
     ]
   },
   "f9_question": {
-    "label": "Frage",
+    "label": "Frage 9",
     "category": "Befindlichkeit",
     "description": "Wir betrachten nun nochmals die zuvor genannten Sensoren nach den Gefühlen, die Sie damit verbinden. Ich nenne Ihnen nun jeweils wieder diese Typen von Sensoren im öffentlichen Raum. Bitte geben Sie an, welches Gefühl überwiegt? Bitte antworten Sie mit Hilfe einer Skala, bei der 1 bedeutet: „Sehr positiv“, 2 „Eher positiv“, 3 „Eher negativ“ und 4 „Sehr negativ“.",
     "values": [
@@ -1542,7 +1542,7 @@
     ]
   },
   "f10_question": {
-    "label": "Frage",
+    "label": "Frage 10",
     "category": "Vertrauen",
     "description": null,
     "values": [
@@ -1721,7 +1721,7 @@
     ]
   },
   "f11": {
-    "label": "Frage",
+    "label": "Frage 11",
     "category": "Vertrauen",
     "description": "Gespeicherte Daten aus Sensoren werden sowohl von öffentlichen als auch von privaten Betreibern verarbeitet [INT: d.h., Daten werden gesammelt, gespeichert und ausgewertet]. Hat die Art des Betreibers einen Einfluss auf Ihr Vertrauen in die datenschutzkonforme Datenverarbeitung?",
     "values": [
@@ -1805,7 +1805,7 @@
     ]
   },
   "f12": {
-    "label": "Frage",
+    "label": "Frage 12",
     "category": "Erwartungen an Verwaltung",
     "description": "Wer ist Ihrer Ansicht nach dafür hauptsächlich verantwortlich, über Sensoren im öffentlichen Raum zu informieren?",
     "values": [
@@ -1837,7 +1837,7 @@
     ]
   },
   "f13_question": {
-    "label": "Frage",
+    "label": "Frage 13",
     "category": "Erwartungen an Verwaltung",
     "description": "Ich lese Ihnen nun einige Aussagen zu Sensoren im öffentlichen Raum vor. Bitte antworten Sie mit Hilfe einer Skala, bei der 1 bedeutet: „Trifft voll und ganz zu“, 2 „Trifft eher zu“, 3 „Trifft eher weniger zu“ und 4 „Trifft überhaupt nicht zu“.",
     "values": [
@@ -1956,7 +1956,7 @@
     ]
   },
   "f14": {
-    "label": "Frage",
+    "label": "Frage 14",
     "category": "Erwartungen an Verwaltung",
     "description": "Verwenden Sie am Körper getragene Technik, wie Fitness-Tracker/Armbänder oder Smartwatches (sogenannte Wearables) oder eine Fitness-App, die Daten [INT bspw.  Herzfrequenz, Kalorienverbrauch, Routen] erfasst? (Ja/Nein)",
     "values": [
@@ -2020,7 +2020,7 @@
     ]
   },
   "f15": {
-    "label": "Frage",
+    "label": "Frage 15",
     "category": "Erwartungen an Verwaltung",
     "description": "Nutzen Sie die Corona-Warn-App?",
     "values": [
@@ -2052,7 +2052,7 @@
     ]
   },
   "f16": {
-    "label": "Frage",
+    "label": "Frage 16",
     "category": "Erwartungen an Verwaltung",
     "description": "Nutzen Sie die LUCA-App?",
     "values": [
@@ -2084,7 +2084,7 @@
     ]
   },
   "f17": {
-    "label": "Frage",
+    "label": "Frage 17",
     "category": "Fokus Kameras",
     "description": null,
     "values": [
@@ -2112,7 +2112,7 @@
     ]
   },
   "f18": {
-    "label": "Frage",
+    "label": "Frage 18",
     "category": "Fokus Kameras",
     "description": "Was bedeutet für Sie mehr Videoüberwachung?",
     "values": [
@@ -2148,7 +2148,7 @@
     ]
   },
   "f19_question": {
-    "label": "Frage",
+    "label": "Frage 19",
     "category": "Fokus Kameras",
     "description": null,
     "values": [
@@ -2391,7 +2391,7 @@
     ]
   },
   "f20_question": {
-    "label": "Frage",
+    "label": "Frage 20",
     "category": "Fokus Kameras",
     "description": "Wo würden Sie einer Videoüberwachung zustimmen? Bitte antworten Sie mit Hilfe einer Skala, bei der 1 bedeutet: „Stimme uneingeschränkt zu“, 2 „Stimme nur eingeschränkt zu“ und 3 „Lehne es uneingeschränkt ab“.",
     "values": [
@@ -2750,7 +2750,7 @@
     ]
   },
   "f21_question": {
-    "label": "Frage",
+    "label": "Frage 21",
     "category": "Fokus Kameras",
     "description": "Im Folgenden geht es um Ziele, für die eine Videoüberwachung eingesetzt werden könnte. Für die Erreichung welcher Ziele akzeptieren Sie Videoüberwachung?",
     "values": [
@@ -3112,7 +3112,7 @@
     "answers": []
   },
   "f22": {
-    "label": "Frage",
+    "label": "Frage 22",
     "category": "Fokus Kameras",
     "description": "Bislang werden die aus Kameras im öffentlichen Raum gewonnenen Bilddaten in erster Linie von Kommunen und Unternehmen genutzt. Sollten Ihrer Ansicht nach diese Daten offen allen Bürgerinnen und Bürgern [INT: open data] zur Verfügung gestellt werden?",
     "values": [
@@ -3140,7 +3140,7 @@
     ]
   },
   "f23_question": {
-    "label": "Frage",
+    "label": "Frage 23",
     "category": "Erwartungen an Bürger:innen",
     "description": "Kameras im öffentlichen Raum zeichnen alle Vorbeigehenden auf, somit können auch von Ihnen Aufnahmen entstehen . Ich lese Ihnen nun einige Aussagen zu Kameras im öffentlichen Raum vor. Inwieweit treffen diese Aussagen auf Sie zu? Bitte antworten mit Hilfe einer Skala von 1 = Immer/oft, 2 = gelegentlich oder 3 = selten/nie.",
     "values": [
@@ -3283,7 +3283,7 @@
     ]
   },
   "f24": {
-    "label": "Frage",
+    "label": "Frage 24",
     "category": "Erwartungen an Bürger:innen",
     "description": "Vielleicht haben Sie im Zusammenhang mit Videoüberwachung schon einmal nachgedacht, ob es negative Konsequenzen für unbescholtene Bürger:innen haben könnte?",
     "values": [
@@ -3509,7 +3509,7 @@
     "answers": []
   },
   "f25": {
-    "label": "Frage",
+    "label": "Frage 25",
     "category": "Erwartungen an Bürger:innen",
     "description": null,
     "values": [

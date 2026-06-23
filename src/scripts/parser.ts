@@ -58,7 +58,7 @@ export function parseMetadata(questionnairePath ="/Users/so/datastory-sensors/da
             const code = match[1]
 
             let label = line.replace(/\(([fs][\w\d_]+)\)/i, "")
-                            .replace(/[\t ]+[\d\s]+$/, "")
+                            .replace(/[\t +]\d+(?:[\t ]+\d+)+$/, "")
                             .replace(/\[INT[^\]]*\]/gi, "")
                             .trim()
 
