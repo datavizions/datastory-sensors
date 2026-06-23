@@ -1,6 +1,3 @@
-// define what bars should show
-// horizontal setup + vertical setup
-
 <script lang="ts">
     import {arc, pie} from 'd3-shape'
 
@@ -77,11 +74,12 @@
     {/if}
 </div>
 
-// add styles for the bar chart here for now put later to a style sheet
 <style>
 
     .donut {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+        line-height: 1rem;
+        display: inline-block;
     }
 
     .donut-title {
@@ -89,10 +87,11 @@
         margin-bottom: 0.5em;
     }
 
+    /* legend far away is there another option instead of margin */
     .donut-legend {
        list-style: none;
        padding: 0;
-       margin: 0;
+       margin: -1.5rem 0 0 0; 
        display: flex;
        flex-direction: column;
        gap: 0.5rem;
@@ -127,9 +126,8 @@
 
     .donut-layout {
         display: flex;
-        align-items: center;
+        flex-direction: column;
         justify-content: center;
-        gap: 1rem;
         flex-wrap: wrap;
     }
 
