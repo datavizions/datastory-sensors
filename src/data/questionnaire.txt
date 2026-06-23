@@ -44,8 +44,8 @@ Sensoren im öffentlichen Raum messen sehr unterschiedliche Dinge. Ich nenne Ihn
 Mehrfachnennungen möglich
 
 -	Sensoren zur Messung von bewegten Objekten [INT: Bspw. Personen, Verkehr, Wildtiere..] (f3A1)
--	Umweltsensoren [INT Bspw. Luftqualität, Temperatur, Pegelstände...] (f2A2)
--	Sensoren zur Messung von Prozessen [INT bspw. In Strom-, Gas-, Wassernetzen; Mülltonnen...] (f2A3)
+-	Umweltsensoren [INT Bspw. Luftqualität, Temperatur, Pegelstände...] (f3A2)
+-	Sensoren zur Messung von Prozessen [INT bspw. In Strom-, Gas-, Wassernetzen; Mülltonnen...] (f3A3)
 -	Kameras zur Beobachtung des öffentlichen Raumes (f3A4)
 -	Keine davon (f3A5)
 -	Weiß nicht/Keine Angabe [INT: Nicht vorlesen] (f3A6)

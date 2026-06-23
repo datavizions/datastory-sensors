@@ -44,20 +44,20 @@
     {#if title}
         <p class="bar-title">{title}</p>
     <svg width={width} height={svgHeight} aria-label={title}>
-            <g transform="translate({margin.left}, ${margin.top })">
+            <g transform={`translate(${margin.left}, ${margin.top})`}>
             {#each items as item, i }
              {@const y = i * (barHeight + gap)}
              {@const barW = xScale(item.percent)}
 
              <!-- label -->
-              <foreignObject x = {0} y={y} width={labelWidth - 10} height={barHeight + gap}>
-                <div class="bar-label">{item.label}</div>
+              <foreignObject x="0" y={y} width={labelWidth} height={barHeight}>
+                <div class="bar-label" style="height:24px; overflow:hidden">{item.label}</div>
                 </foreignObject>
                 <!-- bar -->
-                <rect x={labelWidth} y={y+5} width={innerWidth} height={barHeight-10} fill={color} rx="3"/> // define color style sheet 
+                <rect x={labelWidth} y={y+5} width={barW} height={barHeight-10} fill={color} rx="3"/> // define color style sheet 
 
                 <!-- bar filling -->
-                <rect x={labelWidth} y={y+5} width={innerWidth} height={barHeight-10} fill={color} rx="3" opacity="0.8"/>
+                <rect x={labelWidth} y={y+5} width={barW} height={barHeight-10} fill={color} rx="3" opacity="0.8"/>
 
                 <!-- percentage label -->
                  <text x={labelWidth + innerWidth + 5} y={y + barHeight / 2 +1} dominant-baseline="middle" class="bar-percentage">{item.percent}%</text>
@@ -78,7 +78,7 @@
     .barchart {
         width: 100%;
         font-family: sans-serif;
-        font-size: 9rem;
+        font-size: 0.9rem;
     }
 
     .bar-title {

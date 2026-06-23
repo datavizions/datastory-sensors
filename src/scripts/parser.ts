@@ -55,12 +55,17 @@ export function parseMetadata(questionnairePath ="/Users/so/datastory-sensors/da
         const match = line.match(/\(([fs][\w\d_]+)\)/i) // f or s code
 
         if (match) {
-            const code = match[1].toLowerCase()
+            const code = match[1]
 
             let label = line.replace(/\(([fs][\w\d_]+)\)/i, "")
-                            .replace(/[\t]+[\d\s]+$/, "")
+                            .replace(/[\t ]+[\d\s]+$/, "")
                             .replace(/\[INT[^\]]*\]/gi, "")
                             .trim()
+
+        if (!label && i > 0)    {
+            label = lines[i-1].replace(/\[INT[^\]]*\]/gi, "")
+            .trim()
+        }
 
         metaData.set(code, {
             code,

@@ -86,8 +86,8 @@ export function barList(
         .map(code => {
             const count = countAnswer(cols[code], '1')
             return {
-                code: cols[code].label,
-                label: cols[code].category ?? cols[code].label,
+                code,
+                label: cols[code].label,
                 count,
                 percent: n > 0 ? Math.round((count/n)*100) : 0
             }
@@ -102,7 +102,7 @@ export function distribution(
         ): {answer: string; label: string; count: number; percent: number}[]{
             if (!col) return[]
             const n = total(col)
-            return col.answers.filter(r => Object.prototype.hasOwnProperty.call(labelMap, r.answer)).map(r => ({
+            return col.answers.map(r =>({
                 answer: r.answer,
                 label: labelMap[r.answer] ?? r.answer,
                 count: r.count,

@@ -6,25 +6,25 @@
     "items": [
       {
         "code": "f2A1",
-        "label": "Unbekannt",
+        "label": "-\tIch nehme Sensoren im öffentlichen Raum wahr.",
         "count": 5,
         "percent": 45
       },
       {
         "code": "f2A2",
-        "label": "Unbekannt",
+        "label": "-\tUmweltsensoren",
         "count": 3,
         "percent": 27
       },
       {
         "code": "f2A3",
-        "label": "Unbekannt",
+        "label": "-\tSensoren zur Messung von Prozessen",
         "count": 2,
         "percent": 18
       },
       {
         "code": "f2A5",
-        "label": "Unbekannt",
+        "label": "-\tWeiß nicht/Keine Angabe",
         "count": 1,
         "percent": 9
       }
@@ -37,31 +37,31 @@
     "items": [
       {
         "code": "f3A1",
-        "label": "Unbekannt",
+        "label": "-\tSensoren zur Messung von bewegten Objekten",
         "count": 7,
         "percent": 64
       },
       {
         "code": "f3A2",
-        "label": "Unbekannt",
+        "label": "f3A2",
         "count": 10,
         "percent": 91
       },
       {
         "code": "f3A3",
-        "label": "Unbekannt",
+        "label": "f3A3",
         "count": 3,
         "percent": 27
       },
       {
         "code": "f3A5",
-        "label": "Unbekannt",
+        "label": "-\tKeine davon",
         "count": 0,
         "percent": 0
       },
       {
         "code": "f3A6",
-        "label": "Unbekannt",
+        "label": "-\tSensoren brauchen ein Kabel für Strom- oder Datenübertragung",
         "count": 0,
         "percent": 0
       }
@@ -74,55 +74,55 @@
     "items": [
       {
         "code": "f4A1",
-        "label": "Unbekannt",
+        "label": "-\tSensoren können Daten erfassen",
         "count": 9,
         "percent": 82
       },
       {
         "code": "f4A2",
-        "label": "Unbekannt",
+        "label": "-\tSensoren sind jederzeit sichtbar",
         "count": 2,
         "percent": 18
       },
       {
         "code": "f4A3",
-        "label": "Unbekannt",
+        "label": "-\tSensoren können Daten speichern",
         "count": 7,
         "percent": 64
       },
       {
         "code": "f4A5",
-        "label": "Unbekannt",
+        "label": "-\tDaten von Sensoren können kombiniert und weiterverarbeitet werden",
         "count": 9,
         "percent": 82
       },
       {
         "code": "f4A6",
-        "label": "Unbekannt",
+        "label": "f4A6",
         "count": 2,
         "percent": 18
       },
       {
         "code": "f4A7",
-        "label": "Unbekannt",
+        "label": "-\tSensordaten können zur automatischen Steuerung von Geräten benutzt werden",
         "count": 7,
         "percent": 64
       },
       {
         "code": "f4A8",
-        "label": "Unbekannt",
+        "label": "-\tSensoren erfassen immer Daten, die als Person identifizierbar machen",
         "count": 1,
         "percent": 9
       },
       {
         "code": "f4A9",
-        "label": "Unbekannt",
+        "label": "-\tKeine davon",
         "count": 0,
         "percent": 0
       },
       {
         "code": "f4A10",
-        "label": "Unbekannt",
+        "label": "-\tWeiß nicht/Keine Angabe",
         "count": 0,
         "percent": 0
       }
@@ -150,6 +150,12 @@
         "label": "Sehr negativ",
         "count": 1,
         "percent": 9
+      },
+      {
+        "answer": "5",
+        "label": "5",
+        "count": 1,
+        "percent": 9
       }
     ]
   },
@@ -173,7 +179,7 @@
     "items": [
       {
         "code": "f6A1_1",
-        "label": "f6A1_1",
+        "label": "Sensoren im öffentlichen Raum machen mich neugierig",
         "distribution": [
           {
             "answer": "1",
@@ -203,7 +209,7 @@
       },
       {
         "code": "f6A2_1",
-        "label": "f6A2_1",
+        "label": "Durch Sensoren im öffentlichen Raum fühle ich mich sicher (sicherer als ohne)",
         "distribution": [
           {
             "answer": "2",
@@ -233,7 +239,7 @@
       },
       {
         "code": "f6A3_1",
-        "label": "f6A3_1",
+        "label": "Sensoren im öffentlichen Raum erzeugen ein Überwachungsgefühl",
         "distribution": [
           {
             "answer": "2",
@@ -263,7 +269,7 @@
       },
       {
         "code": "f6A4_1",
-        "label": "f6A4_1",
+        "label": "Sensoren im öffentlichen Raum finde ich fortschrittlich",
         "distribution": [
           {
             "answer": "1",
@@ -299,7 +305,7 @@
       },
       {
         "code": "f6A5_1",
-        "label": "f6A5_1",
+        "label": "Sensoren im öffentlichen Raum lösen keine Probleme",
         "distribution": [
           {
             "answer": "2",
@@ -347,7 +353,7 @@
     "items": [
       {
         "code": "f8A1_1",
-        "label": "f8A1_1",
+        "label": "Sichtbare Hinweisschilder auf dem Sensor vor Ort",
         "distribution": [
           {
             "answer": "1",
@@ -371,7 +377,7 @@
       },
       {
         "code": "f8A2_1",
-        "label": "f8A2_1",
+        "label": "Detaillierte Informationen zum Sensor / in der Nähe des Sensors",
         "distribution": [
           {
             "answer": "1",
@@ -384,12 +390,18 @@
             "label": "Kein Unterschied",
             "count": 3,
             "percent": 27
+          },
+          {
+            "answer": "9",
+            "label": "9",
+            "count": 1,
+            "percent": 9
           }
         ]
       },
       {
         "code": "f8A3_1",
-        "label": "f8A3_1",
+        "label": "leicht auffindbare Informationen zum Sensor im Internet",
         "distribution": [
           {
             "answer": "1",
@@ -413,7 +425,7 @@
       },
       {
         "code": "f8A4_1",
-        "label": "f8A4_1",
+        "label": "Regionale öffentliche Berichterstattung",
         "distribution": [
           {
             "answer": "1",
@@ -431,7 +443,7 @@
       },
       {
         "code": "f8A5_1",
-        "label": "f8A5_1",
+        "label": "Informationen zur Funktionsweise des Sensors",
         "distribution": [
           {
             "answer": "1",
@@ -449,7 +461,7 @@
       },
       {
         "code": "f8A6_1",
-        "label": "f8A6_1",
+        "label": "Informationen zur Nutzung der durch den Sensor erhobenen Daten",
         "distribution": [
           {
             "answer": "1",
@@ -467,7 +479,7 @@
       },
       {
         "code": "f8A7_1",
-        "label": "f8A7_1",
+        "label": "Zeitliche Beschränkung",
         "distribution": [
           {
             "answer": "2",
@@ -486,12 +498,18 @@
             "label": "Verringert Zustimmung",
             "count": 1,
             "percent": 9
+          },
+          {
+            "answer": "9",
+            "label": "9",
+            "count": 1,
+            "percent": 9
           }
         ]
       },
       {
         "code": "f8A8_1",
-        "label": "f8A8_1",
+        "label": "Markierungen, die ein Ausweichen ermöglichen/Wahlmöglichkeiten",
         "distribution": [
           {
             "answer": "2",
@@ -509,7 +527,7 @@
       },
       {
         "code": "f8A9_1",
-        "label": "f8A9_1",
+        "label": "Information über den bisherigen Nutzen des Sensors / was er gebracht hat",
         "distribution": [
           {
             "answer": "1",
@@ -534,31 +552,31 @@
     "items": [
       {
         "code": "f10A1",
-        "label": "Unbekannt",
+        "label": "-\tEs ist mir wichtig, Kontrolle über die Freigabe mich betreffender Daten zu behalten.",
         "count": 8,
         "percent": 73
       },
       {
         "code": "f10A2",
-        "label": "Unbekannt",
+        "label": "-\tIch habe nichts gegen eine Datennutzung, wenn diese anonymisiert erfolgt.",
         "count": 5,
         "percent": 45
       },
       {
         "code": "f10A3",
-        "label": "Unbekannt",
+        "label": "-\tIch stimme einer Datennutzung zu, wenn mich betreffende Daten nur so nach statistischen Merkmalen  verarbeitet werden, dass ich dabei nicht identifizierbar bin.",
         "count": 5,
         "percent": 45
       },
       {
         "code": "f10A5",
-        "label": "Unbekannt",
+        "label": "-\tKeine davon",
         "count": 0,
         "percent": 0
       },
       {
         "code": "f10A6",
-        "label": "Unbekannt",
+        "label": "-\tWeiß nicht/keine Angabe",
         "count": 0,
         "percent": 0
       }
@@ -639,7 +657,7 @@
     "items": [
       {
         "code": "f20A1_1",
-        "label": "f20A1_1",
+        "label": "Vor Versorgungsunternehmen wie bspw. Stadtwerke, E-Werke",
         "distribution": [
           {
             "answer": "1",
@@ -658,12 +676,18 @@
             "label": "Stimmer eingeschränkt zu",
             "count": 2,
             "percent": 18
+          },
+          {
+            "answer": "9",
+            "label": "9",
+            "count": 1,
+            "percent": 9
           }
         ]
       },
       {
         "code": "f20A2_1",
-        "label": "f20A2_1",
+        "label": "Vor Gerichtsgebäude, Rathäuser, Bürgerämter",
         "distribution": [
           {
             "answer": "1",
@@ -687,7 +711,7 @@
       },
       {
         "code": "f20A3_1",
-        "label": "f20A3_1",
+        "label": "BodyCams an Einsatzkräften",
         "distribution": [
           {
             "answer": "1",
@@ -705,7 +729,7 @@
       },
       {
         "code": "f20A4_1",
-        "label": "f20A4_1",
+        "label": "Vor Schulen",
         "distribution": [
           {
             "answer": "1",
@@ -729,7 +753,7 @@
       },
       {
         "code": "f20A5_1",
-        "label": "f20A5_1",
+        "label": "Im Verkehr/Kreuzungen (fließend, ruhend)",
         "distribution": [
           {
             "answer": "1",
@@ -747,7 +771,7 @@
       },
       {
         "code": "f20A6_1",
-        "label": "f20A6_1",
+        "label": "An öffentliche Plätze und Parks",
         "distribution": [
           {
             "answer": "1",
@@ -765,7 +789,7 @@
       },
       {
         "code": "f20A7_1",
-        "label": "f20A7_1",
+        "label": "Vor öffentlichen Toiletten/ vor Umkleidekabinen",
         "distribution": [
           {
             "answer": "2",
@@ -778,12 +802,18 @@
             "label": "Lehne es uneingeschränkt ab",
             "count": 4,
             "percent": 36
+          },
+          {
+            "answer": "9",
+            "label": "9",
+            "count": 1,
+            "percent": 9
           }
         ]
       },
       {
         "code": "f20A8_1",
-        "label": "f20A8_1",
+        "label": "Im öffentlichen Nahverkehr und auf Bahnhöfen und Haltestellen",
         "distribution": [
           {
             "answer": "1",
@@ -801,7 +831,7 @@
       },
       {
         "code": "f20A9_1",
-        "label": "f20A9_1",
+        "label": "Auf Marktplätzen/in Einkaufsstraßen/Einkaufszentren",
         "distribution": [
           {
             "answer": "2",
@@ -814,12 +844,18 @@
             "label": "Stimme uneingeschränkt zu",
             "count": 4,
             "percent": 36
+          },
+          {
+            "answer": "9",
+            "label": "9",
+            "count": 1,
+            "percent": 9
           }
         ]
       },
       {
         "code": "f20A10_1",
-        "label": "f20A10_1",
+        "label": "Vor einzelnstehenden Geschäften bzw. Gastronomie",
         "distribution": [
           {
             "answer": "2",
@@ -843,7 +879,7 @@
       },
       {
         "code": "f20A11_1",
-        "label": "f20A11_1",
+        "label": "In Wohnstraßen/Wohnvierteln",
         "distribution": [
           {
             "answer": "3",
