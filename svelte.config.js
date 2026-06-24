@@ -14,7 +14,13 @@ const config = {
 	},
 	preprocess,
 	kit: {
-		adapter: adapterStatic({ strict: false })
+		adapter: adapterStatic({ strict: false }),
+		alias: {
+			$components: "src/components",
+			$styles: "src/styles",
+			$utils: "src/utils",
+			$data: "src/data"
+		}
 	}
 };
 

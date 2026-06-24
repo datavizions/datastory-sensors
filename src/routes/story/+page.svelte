@@ -4,9 +4,11 @@
     import charts from "$data/charts.json";
 
     const wahrnehmung_F2A1 = charts.wahrnehmung.items.find(item => item.label === "F2A1");
-    const überwachung = charts.überwachungsgefühl.perecent;
+    const überwachung = charts.überwachungsgefühl.percent;
 </script>
 
+<!-- To Do add color vars in css -->
+ <!-- Issue with btnLabel import -->
 <Section accent="#2DD4BF" next="/story/wissen" bntLabel="Story starten">
     <p class="kicker"> ÖFIT · FRAUNHOFER FOKUS · 2021</p>>
     <span class="badge">Datenstory</span>
