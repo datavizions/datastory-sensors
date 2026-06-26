@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Section from "$components/story/Story.Section.svelte";
-    import StatBlock from "$components/story/Story.StatBlock.svelte";
+    import Section from "$story/Story.Section.svelte";
+    import StatBlock from "$story/Story.StatBlock.svelte";
     import charts from "$data/charts.json";
 
     const wahrnehmung_F2A1 = charts.wahrnehmung.items.find(item => item.label === "F2A1");
@@ -9,8 +9,8 @@
 
 <!-- To Do add color vars in css -->
  <!-- Issue with btnLabel import -->
-<Section accent="#2DD4BF" next="/story/wissen" bntLabel="Story starten">
-    <p class="kicker"> ÖFIT · FRAUNHOFER FOKUS · 2021</p>>
+<Section accent="#2DD4BF" next="/story/wissen" btnLabel="Story starten">
+    <p class="kicker"> ÖFIT · FRAUNHOFER FOKUS · 2021</p>
     <span class="badge">Datenstory</span>
     <h1>Sensoren im öffentlichen Raum</h1>
     <p class="description">
