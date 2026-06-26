@@ -68,7 +68,7 @@
 			<Donut title = {charts.kamerabedeutung.title} items={charts.kamerabedeutung.items}  />
 		</div>
 		<div class="charts">
-			<BarChart title = {charts.kamerazustimmungort.title} items={charts.kamerazustimmungort.items.map(item => ({ label: item.label, percent: item.distribution.find(d => d.label === '1')?.percent ?? 0, count: item.distribution.find(d => d.label === '1')?.count ?? 0 }))} note = {charts.kamerazustimmungort.note} color = "var(--purple)" />
+			<BarChart title = {charts.kamerazustimmungort.title} items={charts.kamerazustimmungort.items} note = {charts.kamerazustimmungort.note} color = "var(--purple)" />
 		</div>
 		</div>
 	</section>
@@ -88,12 +88,14 @@
 	h1 {
 		font-size: 1.5em;
 		font-weight: 600;
+		font-family: var(--font-sans);
 		margin-bottom: 2rem;
 	}
 
 	h2 {
 		font-size: 1rem;
 		font-weight: 600;
+		font-family: var(--font-sans);
 		margin-bottom: 1rem;
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
@@ -104,16 +106,22 @@
 
 	section {
 		margin-bottom: 3rem;
+		font-family: var(--font-sans);
+
 	}
 
 	.stats {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 		gap: 0.2rem;
+		font-family: var(--font-sans);
+
 	}
 
 	.charts {
 		min-width: 0;
+		font-family: var(--font-sans);
+
 	}
 
 	.chart-row {
@@ -121,6 +129,8 @@
 		grid-template-columns: 1fr 1fr;
 		gap: 2rem;
 		margin-bottom: 2rem;
+		font-family: var(--font-sans);
+
 	}
 
 	@media (max-width: 480px) {

@@ -38,20 +38,20 @@ Mehrfachnennungen möglich
 Wissen
 
 
-Frage 3 (f3¬_question)
+Frage 3 (f3_question)
 Sensoren im öffentlichen Raum messen sehr unterschiedliche Dinge. Ich nenne Ihnen jetzt verschiedene Typen von Sensoren. Von einigen haben Sie möglicherweise noch nie gehört und das ist auch kein Problem. Bitte geben Sie an, welche Sensoren Sie kennen/Ihnen etwas sagen. 
 
 Mehrfachnennungen möglich
 
 -	Sensoren zur Messung von bewegten Objekten [INT: Bspw. Personen, Verkehr, Wildtiere..] (f3A1)
--	Umweltsensoren [INT Bspw. Luftqualität, Temperatur, Pegelstände...] (f2A2)
--	Sensoren zur Messung von Prozessen [INT bspw. In Strom-, Gas-, Wassernetzen; Mülltonnen...] (f2A3)
+-	Umweltsensoren [INT Bspw. Luftqualität, Temperatur, Pegelstände...] (f3A2)
+-	Sensoren zur Messung von Prozessen [INT bspw. In Strom-, Gas-, Wassernetzen; Mülltonnen...] (f3A3)
 -	Kameras zur Beobachtung des öffentlichen Raumes (f3A4)
 -	Keine davon (f3A5)
 -	Weiß nicht/Keine Angabe [INT: Nicht vorlesen] (f3A6)
 
 
-Frage 4 (f4-_question)
+Frage 4 (f4_question)
 Im Folgenden interessieren wir uns für Ihr Verständnis über die Funktionsweise von Sensoren. Es geht nicht um richtig oder falsch, sondern einfach um Ihre Vorstellung davon. Ich lese Ihnen nun einige Aussagen vor. Welche davon treffen Ihrer Ansicht nach zu?
 Mehrfachnennungen möglich
 INT: Sollte diese Frage größeres Unbehagen erzeugen, bitte „ÜBERSPRINGEN“ markieren.

@@ -199,9 +199,9 @@
     "answers": []
   },
   "f2A1": {
-    "label": "f2A1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tIch nehme Sensoren im öffentlichen Raum wahr.",
+    "category": "Wissen",
+    "description": "-\tIch kann mind. einen konkreten Ort benennen, an dem sich ein Sensor im öffentlichen Raum befindet. (f2A2)",
     "values": [
       "1",
       "1",
@@ -227,9 +227,9 @@
     ]
   },
   "f2A2": {
-    "label": "f2A2",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tIch kann mind. einen konkreten Ort benennen, an dem sich ein Sensor im öffentlichen Raum befindet.",
+    "category": "Wissen",
+    "description": "-\tIch nehme in den vergangenen ein / zwei Jahren mehr Sensoren im öffentlichen Raum wahr als davor. (f2A3)",
     "values": [
       "0",
       "1",
@@ -255,9 +255,9 @@
     ]
   },
   "f2A3": {
-    "label": "f2A3",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tIch nehme in den vergangenen ein / zwei Jahren mehr Sensoren im öffentlichen Raum wahr als davor.",
+    "category": "Wissen",
+    "description": "-\tNichts davon (f2A4)",
     "values": [
       "0",
       "1",
@@ -283,9 +283,9 @@
     ]
   },
   "f2A4": {
-    "label": "f2A4",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tNichts davon",
+    "category": "Wissen",
+    "description": "-\tWeiß nicht/Keine Angabe [INT: Nicht vorlesen] (f2A5)",
     "values": [
       "0",
       "0",
@@ -311,8 +311,8 @@
     ]
   },
   "f2A5": {
-    "label": "f2A5",
-    "category": "Unbekannt",
+    "label": "-\tWeiß nicht/Keine Angabe",
+    "category": "Wissen",
     "description": null,
     "values": [
       "0",
@@ -339,8 +339,8 @@
     ]
   },
   "f3_question": {
-    "label": "f3_question",
-    "category": "Unbekannt",
+    "label": "Frage 3",
+    "category": "Wissen",
     "description": null,
     "values": [
       null,
@@ -358,9 +358,9 @@
     "answers": []
   },
   "f3A1": {
-    "label": "f3A1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tSensoren zur Messung von bewegten Objekten",
+    "category": "Wissen",
+    "description": "-\tUmweltsensoren [INT Bspw. Luftqualität, Temperatur, Pegelstände...] (f3A2)",
     "values": [
       "1",
       "0",
@@ -386,9 +386,9 @@
     ]
   },
   "f3A2": {
-    "label": "f3A2",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tUmweltsensoren",
+    "category": "Wissen",
+    "description": "-\tSensoren zur Messung von Prozessen [INT bspw. In Strom-, Gas-, Wassernetzen; Mülltonnen...] (f3A3)",
     "values": [
       "1",
       "1",
@@ -414,9 +414,9 @@
     ]
   },
   "f3A3": {
-    "label": "f3A3",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tSensoren zur Messung von Prozessen",
+    "category": "Wissen",
+    "description": "-\tKameras zur Beobachtung des öffentlichen Raumes (f3A4)",
     "values": [
       "1",
       "0",
@@ -442,9 +442,9 @@
     ]
   },
   "f3A4": {
-    "label": "f3A4",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tKameras zur Beobachtung des öffentlichen Raumes",
+    "category": "Wissen",
+    "description": "-\tKeine davon (f3A5)",
     "values": [
       "1",
       "1",
@@ -470,9 +470,9 @@
     ]
   },
   "f3A5": {
-    "label": "f3A5",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tKeine davon",
+    "category": "Wissen",
+    "description": "-\tWeiß nicht/Keine Angabe [INT: Nicht vorlesen] (f3A6)",
     "values": [
       "0",
       "0",
@@ -494,9 +494,9 @@
     ]
   },
   "f3A6": {
-    "label": "f3A6",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tSensoren brauchen ein Kabel für Strom- oder Datenübertragung",
+    "category": "Wissen",
+    "description": "-\tSensordaten können zur automatischen Steuerung von Geräten benutzt werden (f4A7)",
     "values": [
       "0",
       "0",
@@ -518,9 +518,9 @@
     ]
   },
   "f4_question": {
-    "label": "f4_question",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Frage 4",
+    "category": "Wissen",
+    "description": "Im Folgenden interessieren wir uns für Ihr Verständnis über die Funktionsweise von Sensoren. Es geht nicht um richtig oder falsch, sondern einfach um Ihre Vorstellung davon. Ich lese Ihnen nun einige Aussagen vor. Welche davon treffen Ihrer Ansicht nach zu?",
     "values": [
       null,
       null,
@@ -537,9 +537,9 @@
     "answers": []
   },
   "f4A1": {
-    "label": "f4A1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tSensoren können Daten erfassen",
+    "category": "Wissen",
+    "description": "-\tSensoren sind jederzeit sichtbar (f4A2)",
     "values": [
       "0",
       "1",
@@ -565,9 +565,9 @@
     ]
   },
   "f4A2": {
-    "label": "f4A2",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tSensoren sind jederzeit sichtbar",
+    "category": "Wissen",
+    "description": "-\tSensoren können Daten speichern (f4A3)",
     "values": [
       "0",
       "0",
@@ -593,9 +593,9 @@
     ]
   },
   "f4A3": {
-    "label": "f4A3",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tSensoren können Daten speichern",
+    "category": "Wissen",
+    "description": "-\tSensoren können Daten auf Plattformen oder in eine Cloud übertragen (f4A4)",
     "values": [
       "1",
       "1",
@@ -621,9 +621,9 @@
     ]
   },
   "f4A4": {
-    "label": "f4A4",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tSensoren können Daten auf Plattformen oder in eine Cloud übertragen",
+    "category": "Wissen",
+    "description": "-\tDaten von Sensoren können kombiniert und weiterverarbeitet werden (f4A5)",
     "values": [
       "1",
       "1",
@@ -649,9 +649,9 @@
     ]
   },
   "f4A5": {
-    "label": "f4A5",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tDaten von Sensoren können kombiniert und weiterverarbeitet werden",
+    "category": "Wissen",
+    "description": "-\tSensoren brauchen ein Kabel für Strom- oder Datenübertragung (f3A6)",
     "values": [
       "1",
       "0",
@@ -705,9 +705,9 @@
     ]
   },
   "f4A7": {
-    "label": "f4A7",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tSensordaten können zur automatischen Steuerung von Geräten benutzt werden",
+    "category": "Wissen",
+    "description": "-\tSensoren erfassen immer Daten, die als Person identifizierbar machen (f4A8)",
     "values": [
       "1",
       "1",
@@ -733,9 +733,9 @@
     ]
   },
   "f4A8": {
-    "label": "f4A8",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tSensoren erfassen immer Daten, die als Person identifizierbar machen",
+    "category": "Wissen",
+    "description": "-\tKeine davon (f4A9)",
     "values": [
       "0",
       "1",
@@ -761,9 +761,9 @@
     ]
   },
   "f4A9": {
-    "label": "f4A9",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tKeine davon",
+    "category": "Wissen",
+    "description": "-\tWeiß nicht/Keine Angabe [INT: Nicht vorlesen] (f4A10)",
     "values": [
       "0",
       "0",
@@ -785,9 +785,9 @@
     ]
   },
   "f4A10": {
-    "label": "f4A10",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tWeiß nicht/Keine Angabe",
+    "category": "Wissen",
+    "description": "-\tÜberspringen  (f4A11)",
     "values": [
       "0",
       "0",
@@ -809,8 +809,8 @@
     ]
   },
   "f4A11": {
-    "label": "f4A11",
-    "category": "Unbekannt",
+    "label": "-\tÜberspringen",
+    "category": "Wissen",
     "description": null,
     "values": [
       "0",
@@ -884,9 +884,9 @@
     "answers": []
   },
   "f6A1_1": {
-    "label": "f6A1_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Sensoren im öffentlichen Raum machen mich neugierig",
+    "category": "Befindlichkeit",
+    "description": "Durch Sensoren im öffentlichen Raum fühle ich mich sicher (sicherer als ohne) (f6A2)\t1\t2\t3\t4\t9",
     "values": [
       "3",
       "4",
@@ -920,8 +920,8 @@
     ]
   },
   "f6A2_1": {
-    "label": "f6A2_1",
-    "category": "Unbekannt",
+    "label": "Durch Sensoren im öffentlichen Raum fühle ich mich sicher (sicherer als ohne)",
+    "category": "Befindlichkeit",
     "description": null,
     "values": [
       "3",
@@ -956,8 +956,8 @@
     ]
   },
   "f6A3_1": {
-    "label": "f6A3_1",
-    "category": "Unbekannt",
+    "label": "Sensoren im öffentlichen Raum erzeugen ein Überwachungsgefühl",
+    "category": "Befindlichkeit",
     "description": null,
     "values": [
       "2",
@@ -992,8 +992,8 @@
     ]
   },
   "f6A4_1": {
-    "label": "f6A4_1",
-    "category": "Unbekannt",
+    "label": "Sensoren im öffentlichen Raum finde ich fortschrittlich",
+    "category": "Befindlichkeit",
     "description": null,
     "values": [
       "3",
@@ -1032,8 +1032,8 @@
     ]
   },
   "f6A5_1": {
-    "label": "f6A5_1",
-    "category": "Unbekannt",
+    "label": "Sensoren im öffentlichen Raum lösen keine Probleme",
+    "category": "Befindlichkeit",
     "description": null,
     "values": [
       "2",
@@ -1123,9 +1123,9 @@
     "answers": []
   },
   "f8A1_1": {
-    "label": "f8A1_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Sichtbare Hinweisschilder auf dem Sensor vor Ort",
+    "category": "Befindlichkeit",
+    "description": "Detaillierte Informationen zum Sensor / in der Nähe des Sensors",
     "values": [
       "3",
       "2",
@@ -1155,9 +1155,9 @@
     ]
   },
   "f8A2_1": {
-    "label": "f8A2_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Detaillierte Informationen zum Sensor / in der Nähe des Sensors",
+    "category": "Befindlichkeit",
+    "description": "leicht auffindbare Informationen zum Sensor im Internet",
     "values": [
       "9",
       "1",
@@ -1187,9 +1187,9 @@
     ]
   },
   "f8A3_1": {
-    "label": "f8A3_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "leicht auffindbare Informationen zum Sensor im Internet",
+    "category": "Befindlichkeit",
+    "description": "Regionale öffentliche Berichterstattung",
     "values": [
       "3",
       "1",
@@ -1219,9 +1219,9 @@
     ]
   },
   "f8A4_1": {
-    "label": "f8A4_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Regionale öffentliche Berichterstattung",
+    "category": "Befindlichkeit",
+    "description": "Informationen zur Funktionsweise des Sensors (f8A5)\t1\t2\t3\t9",
     "values": [
       "2",
       "1",
@@ -1247,9 +1247,9 @@
     ]
   },
   "f8A5_1": {
-    "label": "f8A5_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Informationen zur Funktionsweise des Sensors",
+    "category": "Befindlichkeit",
+    "description": "Informationen zur Nutzung der durch den Sensor erhobenen Daten (f8A6)\t1\t2\t3\t9",
     "values": [
       "2",
       "2",
@@ -1275,9 +1275,9 @@
     ]
   },
   "f8A6_1": {
-    "label": "f8A6_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Informationen zur Nutzung der durch den Sensor erhobenen Daten",
+    "category": "Befindlichkeit",
+    "description": "Zeitliche Beschränkung",
     "values": [
       "2",
       "2",
@@ -1303,9 +1303,9 @@
     ]
   },
   "f8A7_1": {
-    "label": "f8A7_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Zeitliche Beschränkung",
+    "category": "Befindlichkeit",
+    "description": "Markierungen, die ein Ausweichen ermöglichen/Wahlmöglichkeiten (f8A8)\t1\t2\t3\t9",
     "values": [
       "9",
       "2",
@@ -1339,9 +1339,9 @@
     ]
   },
   "f8A8_1": {
-    "label": "f8A8_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Markierungen, die ein Ausweichen ermöglichen/Wahlmöglichkeiten",
+    "category": "Befindlichkeit",
+    "description": "Information über den bisherigen Nutzen des Sensors / was er gebracht hat",
     "values": [
       "2",
       "2",
@@ -1367,8 +1367,8 @@
     ]
   },
   "f8A9_1": {
-    "label": "f8A9_1",
-    "category": "Unbekannt",
+    "label": "Information über den bisherigen Nutzen des Sensors / was er gebracht hat",
+    "category": "Befindlichkeit",
     "description": null,
     "values": [
       "1",
@@ -1414,9 +1414,9 @@
     "answers": []
   },
   "f9A1_1": {
-    "label": "f9A1_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Sensoren zur Messung/Wahrnehmung von bewegten Objekten",
+    "category": "Befindlichkeit",
+    "description": "Umweltsensoren",
     "values": [
       "1",
       null,
@@ -1450,8 +1450,8 @@
     ]
   },
   "f9A2_1": {
-    "label": "f9A2_1",
-    "category": "Unbekannt",
+    "label": "Umweltsensoren",
+    "category": "Befindlichkeit",
     "description": null,
     "values": [
       "2",
@@ -1478,9 +1478,9 @@
     ]
   },
   "f9A3_1": {
-    "label": "f9A3_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Sensoren zur Messung/Nachverfolgung von Prozessen",
+    "category": "Befindlichkeit",
+    "description": "Kameras zur Beobachtung des öffentlichen Raumes (f9A4)\t1\t2\t3\t4\t9",
     "values": [
       "1",
       null,
@@ -1506,8 +1506,8 @@
     ]
   },
   "f9A4_1": {
-    "label": "f9A4_1",
-    "category": "Unbekannt",
+    "label": "Kameras zur Beobachtung des öffentlichen Raumes",
+    "category": "Befindlichkeit",
     "description": null,
     "values": [
       "1",
@@ -1561,9 +1561,9 @@
     "answers": []
   },
   "f10A1": {
-    "label": "f10A1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tEs ist mir wichtig, Kontrolle über die Freigabe mich betreffender Daten zu behalten.",
+    "category": "Vertrauen",
+    "description": "-\tIch habe nichts gegen eine Datennutzung, wenn diese anonymisiert erfolgt. (f10A2)",
     "values": [
       "1",
       "0",
@@ -1589,9 +1589,9 @@
     ]
   },
   "f10A2": {
-    "label": "f10A2",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tIch habe nichts gegen eine Datennutzung, wenn diese anonymisiert erfolgt.",
+    "category": "Vertrauen",
+    "description": "-\tIch stimme einer Datennutzung zu, wenn mich betreffende Daten nur so nach statistischen Merkmalen [INT bspw. Alter, Geschlecht] verarbeitet werden, dass ich dabei nicht identifizierbar bin. (f10A3)",
     "values": [
       "1",
       "1",
@@ -1617,9 +1617,9 @@
     ]
   },
   "f10A3": {
-    "label": "f10A3",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tIch stimme einer Datennutzung zu, wenn mich betreffende Daten nur so nach statistischen Merkmalen  verarbeitet werden, dass ich dabei nicht identifizierbar bin.",
+    "category": "Vertrauen",
+    "description": "-\tIch stimme einer Datennutzung zu, auch wenn ich dabei identifizierbar bin. (f10A4)",
     "values": [
       "1",
       "0",
@@ -1645,9 +1645,9 @@
     ]
   },
   "f10A4": {
-    "label": "f10A4",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tIch stimme einer Datennutzung zu, auch wenn ich dabei identifizierbar bin.",
+    "category": "Vertrauen",
+    "description": "-\tKeine davon (f10A5)",
     "values": [
       "0",
       "0",
@@ -1673,9 +1673,9 @@
     ]
   },
   "f10A5": {
-    "label": "f10A5",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tKeine davon",
+    "category": "Vertrauen",
+    "description": "-\tWeiß nicht/keine Angabe (f10A6)",
     "values": [
       "0",
       "0",
@@ -1697,8 +1697,8 @@
     ]
   },
   "f10A6": {
-    "label": "f10A6",
-    "category": "Unbekannt",
+    "label": "-\tWeiß nicht/keine Angabe",
+    "category": "Vertrauen",
     "description": null,
     "values": [
       "0",
@@ -1856,9 +1856,9 @@
     "answers": []
   },
   "f13A1_1": {
-    "label": "f13A1_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Ich bin ausreichend informiert, wozu im öffentlichen Raum Sensoren genutzt werden",
+    "category": "Erwartungen an Verwaltung",
+    "description": "Ich möchte mehr Informationen erhalten, welche mich betreffenden Daten durch Sensoren erhoben werden (f13A2)\t1\t2\t3\t4\t9",
     "values": [
       "4",
       "4",
@@ -1888,9 +1888,9 @@
     ]
   },
   "f13A2_1": {
-    "label": "f13A2_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Ich möchte mehr Informationen erhalten, welche mich betreffenden Daten durch Sensoren erhoben werden",
+    "category": "Erwartungen an Verwaltung",
+    "description": "Mir ist nicht klar, wozu mich betreffende Daten aus Sensoren genutzt werden (f13A3)\t1\t2\t3\t4\t9",
     "values": [
       "1",
       "2",
@@ -1920,8 +1920,8 @@
     ]
   },
   "f13A3_1": {
-    "label": "f13A3_1",
-    "category": "Unbekannt",
+    "label": "Mir ist nicht klar, wozu mich betreffende Daten aus Sensoren genutzt werden",
+    "category": "Erwartungen an Verwaltung",
     "description": null,
     "values": [
       "1",
@@ -2167,9 +2167,9 @@
     "answers": []
   },
   "f19A1_1": {
-    "label": "f19A1_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Es sollten mehr Kameras im öffentlichen Raum angebracht werden, um Gefahren besser abzuwenden",
+    "category": "Fokus Kameras",
+    "description": "Es ist bedenklich, dass intelligente Kamerasysteme mittlerweile die Aufenthaltsorte von Menschen automatisch verfolgen können (f19A2)\t1\t2\t3\t4\t9",
     "values": [
       "2",
       "3",
@@ -2199,9 +2199,9 @@
     ]
   },
   "f19A2_1": {
-    "label": "f19A2_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Es ist bedenklich, dass intelligente Kamerasysteme mittlerweile die Aufenthaltsorte von Menschen automatisch verfolgen können",
+    "category": "Fokus Kameras",
+    "description": "Aufgrund von Kameras im öffentlichen Raum passe ich mein Verhalten an",
     "values": [
       "1",
       "1",
@@ -2235,9 +2235,9 @@
     ]
   },
   "f19A3_1": {
-    "label": "f19A3_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Aufgrund von Kameras im öffentlichen Raum passe ich mein Verhalten an",
+    "category": "Fokus Kameras",
+    "description": "Mich unerkannt im öffentlichen Raum bewegen zu können, ist mir wichtiger als der potentielle Schutz durch Kameras (f19A4)\t1\t2\t3\t4\t9",
     "values": [
       "4",
       "2",
@@ -2275,9 +2275,9 @@
     ]
   },
   "f19A4_1": {
-    "label": "f19A4_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Mich unerkannt im öffentlichen Raum bewegen zu können, ist mir wichtiger als der potentielle Schutz durch Kameras",
+    "category": "Fokus Kameras",
+    "description": "Ich befürchte, aus Bilddaten werden häufig fragwürdige Schlüsse gezogen.",
     "values": [
       "4",
       "2",
@@ -2315,9 +2315,9 @@
     ]
   },
   "f19A5_1": {
-    "label": "f19A5_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Ich befürchte, aus Bilddaten werden häufig fragwürdige Schlüsse gezogen.",
+    "category": "Fokus Kameras",
+    "description": "Der Nutzen einer Videoüberwachung ist regelmäßig nachzuweisen (f19A6)\t1\t2\t3\t4\t9",
     "values": [
       "3",
       "1",
@@ -2355,8 +2355,8 @@
     ]
   },
   "f19A6_1": {
-    "label": "f19A6_1",
-    "category": "Unbekannt",
+    "label": "Der Nutzen einer Videoüberwachung ist regelmäßig nachzuweisen",
+    "category": "Fokus Kameras",
     "description": null,
     "values": [
       "1",
@@ -2410,9 +2410,9 @@
     "answers": []
   },
   "f20A1_1": {
-    "label": "f20A1_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Vor Versorgungsunternehmen wie bspw. Stadtwerke, E-Werke",
+    "category": "Fokus Kameras",
+    "description": "Vor Gerichtsgebäude, Rathäuser, Bürgerämter (f20A2)\t1\t2\t3\t9",
     "values": [
       "1",
       "2",
@@ -2446,9 +2446,9 @@
     ]
   },
   "f20A2_1": {
-    "label": "f20A2_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Vor Gerichtsgebäude, Rathäuser, Bürgerämter",
+    "category": "Fokus Kameras",
+    "description": "BodyCams an Einsatzkräften",
     "values": [
       "1",
       "1",
@@ -2478,9 +2478,9 @@
     ]
   },
   "f20A3_1": {
-    "label": "f20A3_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "BodyCams an Einsatzkräften",
+    "category": "Fokus Kameras",
+    "description": "Vor Schulen (f20A4)\t1\t2\t3\t9",
     "values": [
       "1",
       "1",
@@ -2506,9 +2506,9 @@
     ]
   },
   "f20A4_1": {
-    "label": "f20A4_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Vor Schulen",
+    "category": "Fokus Kameras",
+    "description": "Im Verkehr/Kreuzungen (fließend, ruhend) (f20A5)\t1\t2\t3\t9",
     "values": [
       "1",
       "1",
@@ -2538,9 +2538,9 @@
     ]
   },
   "f20A5_1": {
-    "label": "f20A5_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Im Verkehr/Kreuzungen (fließend, ruhend)",
+    "category": "Fokus Kameras",
+    "description": "An öffentliche Plätze und Parks (f20A6)\t1\t2\t3\t9",
     "values": [
       "1",
       "2",
@@ -2566,9 +2566,9 @@
     ]
   },
   "f20A6_1": {
-    "label": "f20A6_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "An öffentliche Plätze und Parks",
+    "category": "Fokus Kameras",
+    "description": "Vor öffentlichen Toiletten/ vor Umkleidekabinen (f20A7)\t1\t2\t3\t9",
     "values": [
       "1",
       "2",
@@ -2594,9 +2594,9 @@
     ]
   },
   "f20A7_1": {
-    "label": "f20A7_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Vor öffentlichen Toiletten/ vor Umkleidekabinen",
+    "category": "Fokus Kameras",
+    "description": "Im öffentlichen Nahverkehr und auf Bahnhöfen und Haltestellen (f20A8)\t1\t2\t3\t9",
     "values": [
       "2",
       "3",
@@ -2626,9 +2626,9 @@
     ]
   },
   "f20A8_1": {
-    "label": "f20A8_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Im öffentlichen Nahverkehr und auf Bahnhöfen und Haltestellen",
+    "category": "Fokus Kameras",
+    "description": "Auf Marktplätzen/in Einkaufsstraßen/Einkaufszentren (f20A9)\t1\t2\t3\t9",
     "values": [
       "2",
       "2",
@@ -2654,9 +2654,9 @@
     ]
   },
   "f20A9_1": {
-    "label": "f20A9_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Auf Marktplätzen/in Einkaufsstraßen/Einkaufszentren",
+    "category": "Fokus Kameras",
+    "description": "Vor einzelnstehenden Geschäften bzw. Gastronomie (f20A10)\t1\t2\t3\t9",
     "values": [
       "2",
       "1",
@@ -2686,9 +2686,9 @@
     ]
   },
   "f20A10_1": {
-    "label": "f20A10_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Vor einzelnstehenden Geschäften bzw. Gastronomie",
+    "category": "Fokus Kameras",
+    "description": "In Wohnstraßen/Wohnvierteln (f20A11)\t1\t2\t3\t9",
     "values": [
       "3",
       "2",
@@ -2718,8 +2718,8 @@
     ]
   },
   "f20A11_1": {
-    "label": "f20A11_1",
-    "category": "Unbekannt",
+    "label": "In Wohnstraßen/Wohnvierteln",
+    "category": "Fokus Kameras",
     "description": null,
     "values": [
       "3",
@@ -2769,9 +2769,9 @@
     "answers": []
   },
   "f21A1": {
-    "label": "f21A1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tMüllvermeidung im öffentlichen Raum",
+    "category": "Fokus Kameras",
+    "description": "-\tSchutz von Leib und Leben [INT bspw. durch unmittelbare Alarmierung von  Einsatzkräften] (f21A2)",
     "values": [
       "1",
       "0",
@@ -2797,9 +2797,9 @@
     ]
   },
   "f21A2": {
-    "label": "f21A2",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tSchutz von Leib und Leben",
+    "category": "Fokus Kameras",
+    "description": "-\tVermeidung von Unfällen (f21A3)",
     "values": [
       "1",
       "0",
@@ -2825,9 +2825,9 @@
     ]
   },
   "f21A3": {
-    "label": "f21A3",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tVermeidung von Unfällen",
+    "category": "Fokus Kameras",
+    "description": "-\tSchutz des Privateigentums (f21A4)",
     "values": [
       "1",
       "1",
@@ -2853,9 +2853,9 @@
     ]
   },
   "f21A4": {
-    "label": "f21A4",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tSchutz des Privateigentums",
+    "category": "Fokus Kameras",
+    "description": "-\tSchutz des öffentlichen Eigentums (f21A5)",
     "values": [
       "0",
       "1",
@@ -2881,9 +2881,9 @@
     ]
   },
   "f21A5": {
-    "label": "f21A5",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tSchutz des öffentlichen Eigentums",
+    "category": "Fokus Kameras",
+    "description": "-\tVermeidung von Kriminalität (f21A6)",
     "values": [
       "1",
       "0",
@@ -2909,9 +2909,9 @@
     ]
   },
   "f21A6": {
-    "label": "f21A6",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tVermeidung von Kriminalität",
+    "category": "Fokus Kameras",
+    "description": "-\tErfassung von Verkehrsdelikten (f21A7)",
     "values": [
       "1",
       "1",
@@ -2937,9 +2937,9 @@
     ]
   },
   "f21A7": {
-    "label": "f21A7",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tErfassung von Verkehrsdelikten",
+    "category": "Fokus Kameras",
+    "description": "-\tStrafverfolgung (f21A8)",
     "values": [
       "1",
       "1",
@@ -2965,9 +2965,9 @@
     ]
   },
   "f21A8": {
-    "label": "f21A8",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tStrafverfolgung",
+    "category": "Fokus Kameras",
+    "description": "-\tVerkehrssteuerung (f21A9)",
     "values": [
       "0",
       "1",
@@ -2993,9 +2993,9 @@
     ]
   },
   "f21A9": {
-    "label": "f21A9",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tVerkehrssteuerung",
+    "category": "Fokus Kameras",
+    "description": "-\tFallen Sie Ihnen sonst noch Ziele ein, für die Sie eine Videoüberwachung akzeptieren würden: Sonstige: ….. [offene Frage] (f21A10) (Antwort in f21A13)",
     "values": [
       "1",
       "0",
@@ -3021,9 +3021,9 @@
     ]
   },
   "f21A10": {
-    "label": "f21A10",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tFallen Sie Ihnen sonst noch Ziele ein, für die Sie eine Videoüberwachung akzeptieren würden: Sonstige: ….. [offene Frage]  (Antwort in f21A13)",
+    "category": "Fokus Kameras",
+    "description": "-\tKeine davon (f21A12)",
     "values": [
       "0",
       "0",
@@ -3069,8 +3069,8 @@
     ]
   },
   "f21A12": {
-    "label": "f21A12",
-    "category": "Unbekannt",
+    "label": "-\tKeine davon",
+    "category": "Fokus Kameras",
     "description": null,
     "values": [
       "0",
@@ -3159,9 +3159,9 @@
     "answers": []
   },
   "f23A1_1": {
-    "label": "f23A1_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Ich halte geltende Regeln besonders sorgfältig ein",
+    "category": "Erwartungen an Bürger:innen",
+    "description": "Ich setze Hilfsmittel ein, um auf Kameras im öffentlichen Raum nicht erkannt zu werden [INT: bspw. Kappe,; Brillengestelle; Maske; Bemalung u.a.] (f23A2)\t1\t2\t3\t9",
     "values": [
       "2",
       "3",
@@ -3195,9 +3195,9 @@
     ]
   },
   "f23A2_1": {
-    "label": "f23A2_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Ich setze Hilfsmittel ein, um auf Kameras im öffentlichen Raum nicht erkannt zu werden",
+    "category": "Erwartungen an Bürger:innen",
+    "description": "Ich passe meine Körperhaltung an, um auf Kameras nicht erkannt zu werden. (f23A3)\t1\t2\t3\t9",
     "values": [
       "3",
       "3",
@@ -3223,9 +3223,9 @@
     ]
   },
   "f23A3_1": {
-    "label": "f23A3_1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Ich passe meine Körperhaltung an, um auf Kameras nicht erkannt zu werden.",
+    "category": "Erwartungen an Bürger:innen",
+    "description": "Ich vermeide Orte oder Wege mit Videoüberwachung. (f23A4)\t1\t2\t3\t9",
     "values": [
       "3",
       "3",
@@ -3251,8 +3251,8 @@
     ]
   },
   "f23A4_1": {
-    "label": "f23A4_1",
-    "category": "Unbekannt",
+    "label": "Ich vermeide Orte oder Wege mit Videoüberwachung.",
+    "category": "Erwartungen an Bürger:innen",
     "description": null,
     "values": [
       "3",
@@ -3334,9 +3334,9 @@
     "answers": []
   },
   "f24bA1": {
-    "label": "f24bA1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tIm Berufsleben",
+    "category": "Erwartungen an Bürger:innen",
+    "description": "-\tIm öffentlichen Leben [INT in der Nachbarschaft, in der Gemeinde, Vereinen, Social Media] (f24bA2)",
     "values": [
       "0",
       "0",
@@ -3362,9 +3362,9 @@
     ]
   },
   "f24bA2": {
-    "label": "f24bA2",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tIm öffentlichen Leben",
+    "category": "Erwartungen an Bürger:innen",
+    "description": "-\tIm Privatleben (f24bA3)",
     "values": [
       "1",
       "0",
@@ -3390,9 +3390,9 @@
     ]
   },
   "f24bA3": {
-    "label": "f24bA3",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tIm Privatleben",
+    "category": "Erwartungen an Bürger:innen",
+    "description": "-\tSonstige Lebensbereiche [Offene Frage] (f24bA4)",
     "values": [
       "0",
       "1",
@@ -3418,9 +3418,9 @@
     ]
   },
   "f24bA4": {
-    "label": "f24bA4",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tSonstige Lebensbereiche [Offene Frage]",
+    "category": "Erwartungen an Bürger:innen",
+    "description": "-\tIn keinen davon (f24bA5)",
     "values": [
       "0",
       "0",
@@ -3442,9 +3442,9 @@
     ]
   },
   "f24bA5": {
-    "label": "f24bA5",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tIn keinen davon",
+    "category": "Erwartungen an Bürger:innen",
+    "description": "-\tWeiß nicht/ keine Angabe INT.: Bitte NICHT vorlesen (f24bA6)",
     "values": [
       "0",
       "0",
@@ -3466,9 +3466,9 @@
     ]
   },
   "f24bA6": {
-    "label": "f24bA6",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "-\tWeiß nicht/ keine Angabe INT.: Bitte NICHT vorlesen",
+    "category": "Erwartungen an Bürger:innen",
+    "description": "-\tAntwort auf Offene Frage (f24bA7)",
     "values": [
       "0",
       "0",
@@ -3490,8 +3490,8 @@
     ]
   },
   "f24bA7": {
-    "label": "f24bA7",
-    "category": "Unbekannt",
+    "label": "-\tAntwort auf Offene Frage",
+    "category": "Erwartungen an Bürger:innen",
     "description": null,
     "values": [
       null,
@@ -3541,8 +3541,8 @@
     ]
   },
   "s1": {
-    "label": "Frage S1",
-    "category": "Demografische Daten",
+    "label": "s1",
+    "category": "Unbekannt",
     "description": null,
     "values": [
       "1",
@@ -3593,9 +3593,9 @@
     ]
   },
   "s2neu": {
-    "label": "Frage S2",
-    "category": "Demografische Daten",
-    "description": "Person gehört zur Altersgruppe",
+    "label": "s2neu",
+    "category": "Unbekannt",
+    "description": null,
     "values": [
       "7",
       "3",
@@ -3653,9 +3653,9 @@
     ]
   },
   "s3A1": {
-    "label": "s3A1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Frage S3",
+    "category": "Demografische Daten",
+    "description": "Wie viele Personen insgesamt, Sie selbst eingeschlossen, leben ständig in Ihrem Haushalt?",
     "values": [
       "4",
       "2",
@@ -3689,9 +3689,9 @@
     ]
   },
   "s4A1": {
-    "label": "s4A1",
-    "category": "Unbekannt",
-    "description": null,
+    "label": "Frage S4",
+    "category": "Demografische Daten",
+    "description": "Wie viele Personen davon, Sie selbst mit eingerechnet, sind 16 Jahre und älter?",
     "values": [
       "4",
       "2",

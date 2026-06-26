@@ -1,4 +1,3 @@
-// define what percentages should look like
 
 <script lang="ts">
 
@@ -38,7 +37,6 @@
     {/if}
 </div>
 
-// add styles for the bar chart here for now put later to a style sheet
 <style>
     .statistics {
        display: flex;
