@@ -43,7 +43,7 @@
     </ChartBlock>
 
     <ChartBlock title="Wissen über Funktionsweise (f4)" code="f4">
-        <BarChart title = {charts.wissensensoren.title} items={charts.wissensensoren.items} note = {charts.wissensensoren.note} />
+        <BarChart title = {charts.wissensensoren.title} items={charts.wissensensoren.items} note = {charts.wissensensoren.note} color="var(--story-accent-wissen)" />
     </ChartBlock>
 </Section>
 
@@ -52,22 +52,23 @@
         font-size: clamp(1.5rem, 2vw, 2rem);
         font-weight: 700;
         line-height: 1.2;
+        color: var(--story-on-bg);
         margin-bottom: 1rem;
     }
     .intro {
         font-size: 1rem;
-        color: rgba(255,255,255,0.7);
+        color: color-mix(in srgb, var(--color-gray-300) 50%, transparent);
         line-height: 1.5;
         margin-bottom: 1rem;
     }
     hr{
         border: none;
-        border-top: 1px solid rgba(255,255,255,0.2);
+        border-top: 1px solid color-mix(in srgb, var(--story-on-bg) 20%, transparent);
         margin: 1rem 0;
     }
     .body-text {
         font-size: 1rem;
-        color: rgba(255,255,255,0.7);
+        color: color-mix(in srgb, var(--story-on-bg) 70%, transparent);
         line-height: 1.5;
         margin-bottom: 1rem;
     }

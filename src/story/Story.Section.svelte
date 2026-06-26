@@ -38,8 +38,8 @@
         flex-direction: column;
         gap: 1rem;
         padding: 2rem 1rem;
-        background: var(--color-background);
-        color: var(--color-foreground);
+        background: var(--story-bg);
+        color: var(--story-onbg);
     }
 
     .section-eyebrow {
@@ -63,7 +63,7 @@
         display: inline-block;
         padding: 0.5rem 1rem;
         background: var(--accent);
-        color: var(--color-background);
+        color: var(--story-bg);
         text-decoration: none;
         border-radius: 4px;
     }

@@ -15,6 +15,6 @@
 	}
 
 	.story-root {
-		background: #0d1b2a;
+		background: var(--story-bg);
 	}
 </style>

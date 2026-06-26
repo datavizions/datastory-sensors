@@ -34,7 +34,8 @@
     .chart-block {
         gap: 0.5rem;
         padding: 1rem;
-        background-color: var(--color-background);
+        color: var(--story-on-bg);
+        background-color: var(--story-surface);
         border-left: 4px solid var(--accent);
         overflow: hidden;
     }
@@ -44,20 +45,21 @@
         justify-content: space-between;
         align-items: flex-start;
         gap: 0.5rem;
-        border-bottom: 1px solid var(--color-gray);
+        border-bottom: 1px solid color-mix(in srgb, var(--color-on-bg) 10%, transparent);
     }
 
     .chart-block-title {
         font-family: var(--font-mono);
         font-size: 0.8em;
         font-weight: 600;
-        color: var(--color-white);
+        color: color-mix(in srgb, var(--color-on-bg) 10%, transparent);
     }
 
     .chart-block-badge {
         font-size: 0.6em;
         font-weight: 600;
-        background-color: var(--accent);
+        background-color: var(--accent, var(--strory-accent-wissen));
+        color: var(--story-bg);
         flex-shrink: 0;
         white-space: nowrap;
         padding: 0.2rem 0.5rem;
@@ -74,6 +76,6 @@
         font-weight: 400;
         font-family: var(--font-sans);
         padding: 1.5rem 0;
-        color: var(--color-gray);
+        color: color-mix(in srgb, var(--color-on-bg) 25%, transparent);
     }
 </style>

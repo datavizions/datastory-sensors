@@ -62,14 +62,38 @@
     }
     .intro {
         font-size: 1rem;
-        color: rgba(255,255,255,0.7);
+        color: color-mix(in srgb, var(--story-on-bg) 50%, transparent);
         line-height: 1.5;
         margin-bottom: 1rem;
     }
     hr{
         border: none;
-        border-top: 1px solid rgba(255,255,255,0.2);
+        border-top: 1px solid color-mix(in srgb, var(--story-on-bg) 20%, transparent);
         margin: 1rem 0;
+    }
+    .stat-row {
+        display: grid;
+        gap: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    .stat-mini {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem 1rem;
+        background-color: var(--story-surface);
+        border-radius: 0.5rem;
+    }
+    .stat-mini-number {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1;
+        color: var(--story-accent-kameras);
+    }
+    .stat-mini-text {
+        font-size: 0.9rem;
+        color: var(--story-on-bg);
     }
    
 </style>

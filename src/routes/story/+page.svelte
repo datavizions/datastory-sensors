@@ -9,7 +9,7 @@
 
 <!-- To Do add color vars in css -->
  <!-- Issue with btnLabel import -->
-<Section accent="#2DD4BF" next="/story/wissen" btnLabel="Story starten">
+<Section accent="var(--story-accent-wissen)" next="/story/wissen" btnLabel="Story starten">
     <p class="kicker"> ÖFIT · FRAUNHOFER FOKUS · 2021</p>
     <span class="badge">Datenstory</span>
     <h1>Sensoren im öffentlichen Raum</h1>
@@ -26,20 +26,20 @@
 
     <div class="stat-grid">
         <div class="stat-card">
-            <div class="stat-card-number" style="color: var(--red)">{wahrnehmung_F2A1}%</div>
+            <div class="stat-card-number" style="color: var(--story-accent-wissen)">{wahrnehmung_F2A1}%</div>
             <div class="stat-card-label">nehmen Sensoren im Alltag wahr</div>
         </div>
         <div class="stat-card">
-            <div class="stat-card-number" style="color: var(--red)">{überwachung}%</div>
+            <div class="stat-card-number" style="color: var(--story-accent-vertrauen)">{überwachung}%</div>
             <div class="stat-card-label">empfinden ein Überwachungsgefühl</div>
         </div>
         <!--To Do Platzhalter auswechseln / Je eine Statistik pro Kategorie-->
         <div class="stat-card">
-            <div class="stat-card-number" style="color: var(--red)">51%</div>
+            <div class="stat-card-number" style="color: var(--story-accent-kameras)">51%</div>
             <div class="stat-card-label">vertrauen öffentlichen Betreibern</div>
         </div>
         <div class="stat-card">
-            <div class="stat-card-number" style="color: var(--red)">3 von 4</div>
+            <div class="stat-card-number" style="color: var(--story-accent-perspektive)">3 von 4</div>
             <div class="stat-card-label">wollen mehr Informationen über Sensoren</div>
         </div>
     </div>
@@ -50,27 +50,27 @@
         <p class="content-table-label">INHALT</p>
             <ul>
                 <li>
-                    <span class="dot" style="background: #2DD4BF"></span>
+                    <span class="dot" style="background: var(--story-accent-wissen)"></span>
                     <a href="/story/wissen"><strong>Wissen</strong></a>
                     <span class="content-table-description">Was kennen Bürger:innen?</span>
                 </li>
                 <li>
-                    <span class="dot" style="background: var(--red)"></span>
+                    <span class="dot" style="background: var(--story-accent-vertrauen)"></span>
                     <a href="/story/vertrauen"><strong>Vertrauen</strong></a>
                     <span class="content-table-description">Wem wird vertraut?</span>
                 </li>
                 <li>
-                    <span class="dot" style="background: var(--red)"></span>
+                    <span class="dot" style="background: var(--story-accent-kameras)"></span>
                     <a href="/story/kameras"><strong>Fokus Kameras</strong></a>
                     <span class="content-table-description">Sicherheit oder Kontrolle</span>
                 </li>
                 <li>
-                    <span class="dot" style="background: var(--red)"></span>
+                    <span class="dot" style="background: var(--story-accent-personas)"></span>
                     <a href="/story/personas"><strong>Personas erkunden</strong></a>
                     <span class="content-table-description">Drei Perspektiven</span>
                 </li>
                 <li>
-                    <span class="dot" style="background: var(--red)"></span>
+                    <span class="dot" style="background: var(--story-accent-perspektive)"></span>
                     <a href="/story/perspektive"><strong>Eigener Blick</strong></a>
                     <span class="content-table-description">Erkunde Deine Gruppe</span>
                 </li>
@@ -80,7 +80,7 @@
     <style>
         .kicker {
             font-size: 0.7rem;
-            color: var(--color-gray);
+            color: var(--color-white);
             text-transform: uppercase;
             letter-spacing: 0.1em;
             color: rgba(255, 255, 255, 0.4);
@@ -89,8 +89,8 @@
 
         .badge {
             display: inline-block;
-            background-color: #2DD4BF;
-            color: #0d1b2a;
+            background-color: var(--story-accent-wissen);
+            color: var(--story-on-bg);
             padding: 0.2rem 0.6rem;
             border-radius: 0.25rem;
             font-size: 0.8rem;
@@ -103,6 +103,7 @@
         h1 {
             font-size: 2rem;
             font-weight: 700;
+            color: var(--story-on-bg);
             margin-bottom: 0 0 1rem;
         }
 
@@ -118,7 +119,7 @@
             margin-bottom: 1.5rem;
         }
         .stat-card {
-            background-color: #122030;
+            background-color: var(--story-surface);
             padding: 1rem;
             border-radius: 0.75rem;
             text-align: center;
@@ -126,7 +127,7 @@
         .stat-card-number {
             font-size: 1.5rem;
             font-weight: 700;
-            color:#2DD4BF;
+            color: var(--story-accent-wissen);
             line-height: 1;
             margin-bottom: 0.35rem;
         }
@@ -137,7 +138,7 @@
             
         }
         .content-table {
-            background-color: #122030;
+            background-color: var(--story-surface);
             padding: 1rem;
             border-radius: 0.75rem;
         }
@@ -170,7 +171,7 @@
         }
         .content-table-description {
             font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.7);
+            color: var(--story-on-bg);
             margin-left: auto;
         }
     </style>
