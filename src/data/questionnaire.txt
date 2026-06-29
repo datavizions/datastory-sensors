@@ -61,7 +61,7 @@ INT: Sollte diese Frage größeres Unbehagen erzeugen, bitte „ÜBERSPRINGEN“
 -	Sensoren können Daten speichern (f4A3)
 -	Sensoren können Daten auf Plattformen oder in eine Cloud übertragen (f4A4)
 -	Daten von Sensoren können kombiniert und weiterverarbeitet werden (f4A5)
--	Sensoren brauchen ein Kabel für Strom- oder Datenübertragung (f3A6)
+-	Sensoren brauchen ein Kabel für Strom- oder Datenübertragung (f4A6)
 -	Sensordaten können zur automatischen Steuerung von Geräten benutzt werden (f4A7)
 -	Sensoren erfassen immer Daten, die als Person identifizierbar machen (f4A8)
 -	Keine davon (f4A9)

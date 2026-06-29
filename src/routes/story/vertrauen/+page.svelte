@@ -48,7 +48,17 @@
       color="var(--story-accent-vertrauen)" />
   </ChartBlock>
 
-  <ChartBlock title="Maßnahmen und Akzeptanz (f8)" code="f8" placeholder />
+  <ChartBlock title="Maßnahmen und Akzeptanz (f8)" code="f8">
+    <BarChart
+      items={charts.akzeptanzmaßnahmen.items.map(item => ({
+        label: item.label,
+        percent: item.distribution.find(d => d.answer === '1')?.percent ?? 0,
+        count: item.distribution.find(d => d.answer === '1')?.count ?? 0
+      }))}
+      note="Anteil: Erhöht Zustimmung"
+      color="var(--story-accent-vertrauen)"
+    />
+  </ChartBlock>
 </Section>
 
 <style>

@@ -6,9 +6,11 @@ import {mapCharts} from './charts'
 export {mapCharts}
 
 if(process.argv[1] === fileURLToPath(import.meta.url)){
-    const cols: Cols = JSON.parse(fs.readFileSync("src/data/columns.json", "utf8"))
+    const inputColumnsPath = process.argv[2] ?? 'src/data/columns.json'
+    const outputChartsPath = process.argv[3] ?? 'src/data/charts.json'
+    const cols: Cols = JSON.parse(fs.readFileSync(inputColumnsPath, 'utf8'))
     const charts = mapCharts(cols)
-    fs.writeFileSync("src/data/charts.json", JSON.stringify(charts, null, 2))
+    fs.writeFileSync(outputChartsPath, JSON.stringify(charts, null, 2))
     console.log("mapper worked: see charts", Object.keys(charts).length)
 }
 
