@@ -2,16 +2,23 @@
 
 // import chart types as componentes
 <script>
-	import charts from "$data/charts.json";
-	console.log("charts", charts);
-	console.log("keys", Object.keys(charts));
+	import chartsSample from "$data/charts.sample.json";
+	import chartsFull from "$data/charts.full.json";
 	import BarChart from "$components/figure/Figure.BarChart.svelte";
 	import Donut from "$components/figure/Figure.Donut.svelte";
 	import Stat from "$components/figure/Figure.Stat.svelte";
+
+	let dataset = $state('sample');
+	let charts = $derived(dataset === 'full' ? chartsFull : chartsSample);
 </script>
 
 <div class="page">
 	<h1>Sensoren im öffentlichen Raum: Visualisierungen zur Übersicht</h1>
+
+	<div class="dataset-switch" role="group" aria-label="Datensatz auswählen">
+		<button class:active={dataset === 'sample'} onclick={() => (dataset = 'sample')}>sample</button>
+		<button class:active={dataset === 'full'} onclick={() => (dataset = 'full')}>full</button>
+	</div>
 	
 	<section>
 		<h2>Statistik</h2>
@@ -43,7 +50,7 @@
 			<Donut title = {charts.einstellungtechnik.title} items={charts.einstellungtechnik.items}  />
 		</div>
 		<div class="charts">
-			<BarChart title = {charts.akzeptanzmaßnahmen.title} items={charts.akzeptanzmaßnahmen.items.map(item => ({ label: item.label, percent: item.distribution.find(d => d.label === '1')?.percent ?? 0, count: item.distribution.find(d => d.label === '1')?.count ?? 0 }))} note = {charts.akzeptanzmaßnahmen.note} color = "var(--green)" />
+			<BarChart title = {charts.akzeptanzmaßnahmen.title} items={charts.akzeptanzmaßnahmen.items.map(item => ({ label: item.label, percent: item.distribution.find(d => d.answer === '1')?.percent ?? 0, count: item.distribution.find(d => d.answer === '1')?.count ?? 0 }))} note = "Anteil: Erhöht Zustimmung" color = "var(--green)" />
 		</div>
 		</div>
 	</section>
@@ -138,6 +145,24 @@
 			grid-template-columns: 1fr;
 		}
 	}
-</style>
 
-console.log(charts);
+	.dataset-switch {
+		display: inline-flex;
+		gap: 0.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.dataset-switch button {
+		border: 1px solid var(--color-gray-300, #ccc);
+		background: transparent;
+		padding: 0.4rem 0.7rem;
+		border-radius: 0.4rem;
+		cursor: pointer;
+		font-size: 0.85rem;
+	}
+
+	.dataset-switch button.active {
+		background: var(--color-gray-200, #eee);
+		font-weight: 600;
+	}
+</style>

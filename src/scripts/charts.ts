@@ -63,6 +63,13 @@ function totalSafe(col: Col | undefined): number {
     return col ? col.values.filter(v => v !== null).length : 0
 }
 
+function totalExcluding(col: Col | undefined, excludedAnswers: string[]): number {
+    if (!col) return 0
+    return col.answers
+        .filter(a => !excludedAnswers.includes(a.answer))
+        .reduce((sum, a) => sum + a.count, 0)
+}
+
 // syntax issue
 function countAnswer(col: Col, answer: string): number {
     return col.answers.find(r => r.answer === answer)?.count ?? 0 
@@ -71,6 +78,18 @@ function countAnswer(col: Col, answer: string): number {
 export function percentage(col: Col | undefined, answers: string[]): number {
     if (!col) return 0
     const n = total(col)
+    if (n === 0) return 0
+    const count = answers.reduce((sum, a) => sum + countAnswer(col,a),0)
+    return Math.round((count/n)*100)
+}
+
+export function percentageExcluding(
+    col: Col | undefined,
+    answers: string[],
+    excludedAnswers: string[]
+): number {
+    if (!col) return 0
+    const n = totalExcluding(col, excludedAnswers)
     if (n === 0) return 0
     const count = answers.reduce((sum, a) => sum + countAnswer(col,a),0)
     return Math.round((count/n)*100)
@@ -183,7 +202,7 @@ export function mapCharts(cols: Cols): Record<string, any> {
             type: 'bar',
             title: 'Bekanntheitsgrad nach Sensortyp',
             note: 'Mehrfachnennung möglich',
-            items: barList(cols, ['f3A1', 'f3A2', 'f3A3', 'f3A5', 'f3A6']),            
+            items: barList(cols, ['f3A1', 'f3A2', 'f3A3', 'f3A4', 'f3A5', 'f3A6']),
         },
         wissensensoren: {
             type: 'bar',
@@ -201,8 +220,8 @@ export function mapCharts(cols: Cols): Record<string, any> {
             type: 'distribution',
             title: 'Überwachungsgefühl durch Sensoren',
             description: 'Anteil: trifft voll zu + trifft eher zu',
-            percent: percentage(col('f6A3_1'), ['1','2']),
-            n: totalSafe(col('f6A3_1'))
+            percent: percentageExcluding(col('f6A3_1'), ['1','2'], ['9']),
+            n: totalExcluding(col('f6A3_1'), ['9'])
         },
         befindlichkeit: {
             type: 'bargrouped',
@@ -240,8 +259,8 @@ export function mapCharts(cols: Cols): Record<string, any> {
             type: 'stat',
             title: 'Wunsch nach mehr Informationen zur Datenerhebung',
             description: 'Anteil trifft voll zu + trifft eher zu',
-            percent: percentage(col('f13A2_1'), ['1','2']),
-            n: totalSafe(col('f13A2_1')),
+            percent: percentageExcluding(col('f13A2_1'), ['1','2'], ['9']),
+            n: totalExcluding(col('f13A2_1'), ['9']),
         },
         kamerabedeutung: {
          type: 'distribution',
@@ -262,15 +281,15 @@ export function mapCharts(cols: Cols): Record<string, any> {
             type: 'stat',
             title: 'Bedenklichkeit intelligenter Kamerasysteme',
             description: 'Anteil trifft voll zu + trifft eher zu',
-            percent: percentage(col('f19A2_1'), ['1','2']),
-            n: totalSafe(col('f19A2_1')),
+            percent: percentageExcluding(col('f19A2_1'), ['1','2'], ['9']),
+            n: totalExcluding(col('f19A2_1'), ['9']),
         },
         verhaltensanpassung: {
             type: 'stat',
             title: 'Meidet Orte mit Videoüberwachung',
             description: 'Anteil immer/oft + gelegentlich',
-            percent: percentage(col('f23A4_1'), ['1','2']),
-            n: totalSafe(col('f23A4_1')),
+            percent: percentageExcluding(col('f23A4_1'), ['1','2'], ['9']),
+            n: totalExcluding(col('f23A4_1'), ['9']),
         }
     }
 }

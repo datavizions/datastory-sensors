@@ -1,14 +1,16 @@
 import fs from 'fs'
 import {parse} from '@elekcsv/core'
 
-import type { QuestionsMetadata, Category } from './types'
+import type { QuestionsMetadata } from './types'
 import {preprocess} from './preprocess'
 import {answers} from './repsonses'
 import { parseMetadata } from './parser'
 
-// load survey data sample file for testing 
-// to do: later use the full survey dataset here
-const csvSurveyData = fs.readFileSync('src/data/Daten_Werte_Sensoren_sample.csv', 'utf8')
+const inputCsvPath = process.argv[2] ?? 'src/data/Daten_Werte_Sensoren_sample.csv'
+const outputRowsPath = process.argv[3] ?? 'src/data/rows.json'
+const outputColumnsPath = process.argv[4] ?? 'src/data/columns.json'
+
+const csvSurveyData = fs.readFileSync(inputCsvPath, 'utf8')
 const metadata:  Record<string, QuestionsMetadata> = parseMetadata()
 
 const result = parse(csvSurveyData, {
@@ -50,7 +52,7 @@ headers.forEach((header, index) =>{
 // save to json objects to later use for analysis 
 // rows and colums to look at individual data and use rows to statistically compute stats
 
- fs.writeFileSync('src/data/rows.json', 
+ fs.writeFileSync(outputRowsPath,
         JSON.stringify(
             rows.map((row) => {
                 const object: Record <string, any> = {}
@@ -64,5 +66,5 @@ headers.forEach((header, index) =>{
     ))
 
   fs.writeFileSync(
-        'src/data/columns.json',
+      outputColumnsPath,
         JSON.stringify(collected, null, 2))

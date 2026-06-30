@@ -53,8 +53,8 @@
         gap: 0.7rem;
         padding: 0.8rem;
         border-radius: 0.5rem;
-        background-color: var(--color-background);
-        color: var(--color-foreground);
+        background-color: var(--story-surface);
+        color: var(--story-onbg);
         border: 2px solid transparent;
         cursor: pointer;
     }
@@ -71,7 +71,7 @@
         align-items: center;
         justify-content: center;    
         flex-shrink: 0;
-        background-color: var(--p);
+        background-color: color-mix(in srgb, var(--color-on-bg) 10%, transparent);
         border-radius: 50%;
     }
 
@@ -82,17 +82,18 @@
     .persona-card-name {
         font-weight: 600;
         font-size: 0.9rem;
-        color: var(--color-white);
+        color: var(--p);
     }
 
     .persona-card-role {
         font-size: 0.8rem;
-        color: var(--color-gray);
+        color: color-mix(in srgb, var(--color-on-bg) 10%, transparent);
     }
 
     .persona-card-tag {
         font-size: 0.7rem;
-        color: var(--color-gray);
+        background: color-mix(in srgb, var(--color-on-bg) 10%, transparent);
+        color: var(--p);
     }
 
     .persona-card-badge {
@@ -100,7 +101,7 @@
         padding: 0.2rem 0.5rem;
         border-radius: 0.25rem;
         background-color: var(--p);
-        color: var(--color-background);
+        color: var(--story-bg);
         font-size: 0.7rem;
         font-weight: 600;
     }

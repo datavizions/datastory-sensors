@@ -20,7 +20,8 @@ const config = {
 			$styles: "src/styles",
 			$story: "src/story",
 			$utils: "src/utils",
-			$data: "src/data"
+			$data: "src/data",
+			$runes: 'src/runes'
 		}
 	}
 };
