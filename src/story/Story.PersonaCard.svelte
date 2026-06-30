@@ -20,19 +20,52 @@
         persona: Persona;
         selected?: boolean;
         compact?: boolean;
+        expanded?: boolean;
         onclick?: (event: MouseEvent) => void;
     };
 
     let { 
         persona,
-        selected,
+        selected = false,
         compact = false,
+        expanded = false,
         onclick = () => {},
     }:Props = $props();
 
 </script>
 
-<!--To DO fix button-->
+{#if expanded}
+<article class="persona-story" style="--p:{persona.color}">
+    <div class="persona-story-header">
+        <div class="persona-story-avatar">{persona.emoji}</div>
+        <div class="persona-story-info">
+            <div class="persona-story-name">{persona.name}, {persona.age}</div>
+            <div class="persona-story-role">{persona.job} • {persona.tag}</div>
+        </div>
+        <div class="persona-story-badge">Persona</div>
+    </div>
+
+    <div class="persona-story-scroll">
+    <div class="persona-story-grid">
+        <div class="persona-story-col">
+            <p class="persona-story-scene">{persona.scene}</p>
+            <p class="persona-story-text">{persona.narrative}</p>
+            <span class="persona-story-step">1</span>
+        </div>
+
+        <div class="persona-story-col persona-story-col-quote1">
+            <p class="persona-story-quote">» {persona.quote}</p>
+            <span class="persona-story-step">2</span>
+        </div>
+
+        <div class="persona-story-col persona-story-col-quote2">
+            <p class="persona-story-quote">… {persona.quote2}</p>
+            <span class="persona-story-step">3</span>
+        </div>
+    </div>
+    </div>
+</article>
+{:else}
 <button onclick={onclick} class="persona-card" class:persona-selected={selected} class:persona-compact={compact} style="--p:{persona.color}" >
     <div class="persona-avatar">{persona.emoji}</div>
     <div class="persona-info">
@@ -44,6 +77,7 @@
         <div class="persona-card-badge">Persona</div>
     {/if}
 </button>
+{/if}
 
 <style>
     .persona-card {
@@ -54,7 +88,7 @@
         padding: 0.8rem;
         border-radius: 0.5rem;
         background-color: var(--story-surface);
-        color: var(--story-onbg);
+        color: var(--story-on-bg);
         border: 2px solid transparent;
         cursor: pointer;
     }
@@ -109,5 +143,171 @@
     .persona-compact .persona-info,
     .persona-compact .persona-card-badge {
         display: none;
+    }
+
+    .persona-story {
+        border: 1px solid color-mix(in srgb, var(--p) 35%, transparent);
+        border-radius: 1.5rem;
+        background: color-mix(in srgb, var(--p) 12%, var(--story-surface));
+        color: var(--story-on-bg);
+        overflow: hidden;
+    }
+
+    .persona-story-header {
+        display: flex;
+        align-items: center;
+        gap: 0.9rem;
+        padding: 1rem;
+        border-bottom: 1px solid color-mix(in srgb, var(--p) 28%, transparent);
+    }
+
+    .persona-story-avatar {
+        width: 3.6rem;
+        height: 3.6rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        background: color-mix(in srgb, var(--p) 22%, transparent);
+        flex-shrink: 0;
+    }
+
+    .persona-story-info {
+        min-width: 0;
+    }
+
+    .persona-story-name {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1;
+        color: var(--p);
+        margin-bottom: 0.15rem;
+    }
+
+    .persona-story-role {
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        color: color-mix(in srgb, var(--story-on-bg) 65%, transparent);
+    }
+
+    .persona-story-badge {
+        margin-left: auto;
+        padding: 0.35rem 0.7rem;
+        border-radius: 0.55rem;
+        background: color-mix(in srgb, var(--p) 22%, transparent);
+        color: var(--p);
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        font-weight: 700;
+    }
+
+    .persona-story-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.25fr 1fr;
+    }
+
+    .persona-story-scroll {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .persona-story-col {
+        position: relative;
+        min-height: 10.5rem;
+        padding: 0.9rem 0.9rem 1.6rem;
+        border-right: 1px solid color-mix(in srgb, var(--p) 20%, transparent);
+    }
+
+    .persona-story-col:last-child {
+        border-right: none;
+    }
+
+    .persona-story-scene {
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        color: color-mix(in srgb, var(--story-on-bg) 55%, transparent);
+        margin: 0 0 0.45rem;
+    }
+
+    .persona-story-text {
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        line-height: 1.25;
+        color: color-mix(in srgb, var(--story-on-bg) 70%, transparent);
+        margin: 0;
+    }
+
+    .persona-story-col-quote1 .persona-story-quote {
+        background: color-mix(in srgb, var(--p) 20%, transparent);
+        border: 1px solid color-mix(in srgb, var(--p) 35%, transparent);
+        border-radius: 1rem;
+        padding: 0.7rem 0.75rem;
+        color: color-mix(in srgb, var(--story-on-bg) 92%, transparent);
+    }
+
+    .persona-story-col-quote2 .persona-story-quote {
+        background: color-mix(in srgb, #7a78af 26%, transparent);
+        border: 1px dashed color-mix(in srgb, #9d9ae0 48%, transparent);
+        border-radius: 1rem;
+        padding: 0.7rem 0.75rem;
+        color: color-mix(in srgb, var(--story-on-bg) 65%, transparent);
+    }
+
+    .persona-story-quote {
+        margin: 0;
+        font-size: 0.76rem;
+        line-height: 1.25;
+        font-weight: 700;
+    }
+
+    .persona-story-step {
+        position: absolute;
+        right: 0.65rem;
+        bottom: 0.35rem;
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        color: color-mix(in srgb, var(--story-on-bg) 35%, transparent);
+    }
+
+    @media (max-width: 640px) {
+        .persona-story-header {
+            gap: 0.7rem;
+            padding: 0.8rem;
+        }
+
+        .persona-story-avatar {
+            width: 3rem;
+            height: 3rem;
+            font-size: 1.6rem;
+        }
+
+        .persona-story-name {
+            font-size: 1.5rem;
+        }
+
+        .persona-story-scroll {
+            overflow-x: visible;
+        }
+
+        .persona-story-grid {
+            min-width: 0;
+            grid-template-columns: 1fr;
+        }
+
+        .persona-story-col {
+            min-height: 0;
+            padding: 0.75rem 0.75rem 1.45rem;
+            border-right: none;
+            border-bottom: 1px solid color-mix(in srgb, var(--p) 20%, transparent);
+        }
+
+        .persona-story-col:last-child {
+            border-bottom: none;
+        }
+
+        .persona-story-quote {
+            font-size: 0.74rem;
+        }
     }
 </style>

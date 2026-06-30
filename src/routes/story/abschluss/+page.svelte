@@ -2,8 +2,9 @@
     import Section from '$story/Story.Section.svelte'
     import charts from '$data/charts.json'
 
-    const f2A1 = charts.wahrnehmung.items.find(item => item.label === 'F2A1')?.percent ?? 0;
-    const percentPublic = (charts.vertrauenbetreiber.items.find(item => item.label === '1')?.percent ?? 0) + (charts.vertrauenbetreiber.items.find(item => item.label === '2')?.percent ?? 0);
+    const f2A1 = charts.wahrnehmung.items.find(item => item.code === 'f2A1')?.percent ?? 0;
+    const percentPublic = (charts.vertrauenbetreiber.items.find(item => item.answer === '3')?.percent ?? 0)
+                        + (charts.vertrauenbetreiber.items.find(item => item.answer === '4')?.percent ?? 0);
     const percentSicherheit = charts.kamerabedeutung.items.find(item => item.answer === '1')?.percent ?? 0;
 </script>
 
@@ -42,6 +43,7 @@
     <p class="core-message-source">Kernbotschaft, ÖFIT 2023</p>
   </div>
 
+  <!-- maybe link to ÖFIT or maybe not because user needs to go to the questionnaire -->
   <div class="source-box">
     <p class="source-box-title">Datenquelle</p>
     <p class="source-box-text">
@@ -49,6 +51,10 @@
       Fraunhofer FOKUS, Berlin.<br>
       N ca. 1.000 Personen ab 16 Jahren, Deutschland.
     </p>
+    <div class="source-tags">
+      <a href="/story/wissen" class="source-tag">Fragebogen</a>
+      <span class="source-tag">ÖFIT</span>
+    </div>
   </div>
 
   <!-- Navigation -->
@@ -135,7 +141,24 @@
 	font-family: var(--font-mono);
     color: color-mix(in srgb, var(--story-on-bg) 45%, transparent);
     line-height: 1.6;
-    margin: 0;
+    margin: 0 0 0.75rem;
+  }
+
+  .source-tags {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+  }
+
+  .source-tag {
+    font-size: 0.75rem;
+    font-family: var(--font-mono);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.25rem;
+    background: color-mix(in srgb, var(--story-accent-wissen) 15%, transparent);
+    color: var(--story-accent-wissen);
+    border: 1px solid color-mix(in srgb, var(--story-accent-wissen) 30%, transparent);
+    text-decoration: none;
   }
 
   .nav-links {

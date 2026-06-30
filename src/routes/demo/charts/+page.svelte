@@ -33,14 +33,14 @@
 	<section>
 		<h2>Wissen</h2>
 		<div class="chart-row">
-			<BarChart title = {charts.wahrnehmung.title} items={charts.wahrnehmung.items} note = {charts.wahrnehmung.note} />
+			<BarChart title = {charts.wahrnehmung.title} items={charts.wahrnehmung.items} note = {charts.wahrnehmung.note} n={charts.wahrnehmung.n} />
 		</div>
 
 		<div class="charts">
-			<BarChart title = {charts.sensortypen.title} items={charts.sensortypen.items} note = {charts.sensortypen.note} color = "var(--blue)" />
+			<BarChart title = {charts.sensortypen.title} items={charts.sensortypen.items} note = {charts.sensortypen.note} n={charts.sensortypen.n} color = "var(--blue)" />
 		</div>
 		<div class="charts">
-			<BarChart title = {charts.wissensensoren.title} items={charts.wissensensoren.items} note = {charts.wissensensoren.note} color = "var(--blue)" />
+			<BarChart title = {charts.wissensensoren.title} items={charts.wissensensoren.items} note = {charts.wissensensoren.note} n={charts.wissensensoren.n} color = "var(--blue)" />
 		</div>
 	</section>
 	<section>
@@ -50,7 +50,7 @@
 			<Donut title = {charts.einstellungtechnik.title} items={charts.einstellungtechnik.items}  />
 		</div>
 		<div class="charts">
-			<BarChart title = {charts.akzeptanzmaßnahmen.title} items={charts.akzeptanzmaßnahmen.items.map(item => ({ label: item.label, percent: item.distribution.find(d => d.answer === '1')?.percent ?? 0, count: item.distribution.find(d => d.answer === '1')?.count ?? 0 }))} note = "Anteil: Erhöht Zustimmung" color = "var(--green)" />
+			<BarChart title = {charts.akzeptanzmaßnahmen.title} items={charts.akzeptanzmaßnahmen.items.map(item => ({ label: item.label, percent: item.distribution.find(d => d.answer === '1')?.percent ?? 0, count: item.distribution.find(d => d.answer === '1')?.count ?? 0 }))} n={charts.akzeptanzmaßnahmen.n} note = "Anteil: Erhöht Zustimmung" color = "var(--green)" />
 		</div>
 		</div>
 	</section>
@@ -63,7 +63,7 @@
 			<Donut title = {charts.vertrauenbetreiber.title} items={charts.vertrauenbetreiber.items}  />
 		</div>
 		<div class="charts">
-			<BarChart title = {charts.datenschutzhaltung.title} items={charts.datenschutzhaltung.items} note = {charts.datenschutzhaltung.note} color = "var(--orange)" />
+			<BarChart title = {charts.datenschutzhaltung.title} items={charts.datenschutzhaltung.items} note = {charts.datenschutzhaltung.note} n={charts.datenschutzhaltung.n} color = "var(--orange)" />
 		</div>
 		</div>
 	</section>
@@ -75,7 +75,7 @@
 			<Donut title = {charts.kamerabedeutung.title} items={charts.kamerabedeutung.items}  />
 		</div>
 		<div class="charts">
-			<BarChart title = {charts.kamerazustimmungort.title} items={charts.kamerazustimmungort.items} note = {charts.kamerazustimmungort.note} color = "var(--purple)" />
+			<BarChart title = {charts.kamerazustimmungort.title} items={charts.kamerazustimmungort.items} note = {charts.kamerazustimmungort.note} n={charts.kamerazustimmungort.n} color = "var(--purple)" />
 		</div>
 		</div>
 	</section>

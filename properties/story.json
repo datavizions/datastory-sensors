@@ -59,6 +59,9 @@
     },
     "accent-persona-2": {
       "value": "#7a6010"
+    },
+    "accent-personas": {
+      "value": "#e6edf3"
     }
   }
 }

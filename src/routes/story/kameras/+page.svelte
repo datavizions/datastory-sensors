@@ -46,7 +46,7 @@
     </ChartBlock>
 
     <ChartBlock title="Zustimmung nach Ort (f20)" code="f20">
-        <BarChart items={charts.kamerazustimmungort.items} />
+        <BarChart items={charts.kamerazustimmungort.items} n={charts.kamerazustimmungort.n} />
     </ChartBlock>
 
     <ChartBlock title="Verhaltensanpassung((f19A3/f23A4)" code="f19/f23">

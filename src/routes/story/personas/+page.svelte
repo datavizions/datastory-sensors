@@ -57,7 +57,7 @@
   <p class="results-label">ERGEBNISSE FÜR {activePersona?.name?.toUpperCase() ?? 'ALLE'}</p>
 
   <ChartBlock title="Einstellung zu Sensoren allgemein (f1)" code="f1">
-    <BarChart items={charts.einstellungtechnik.items} color={activePersona?.color ?? 'var(--story-accent-perspektive)'} />
+    <BarChart items={charts.einstellungtechnik.items} n={charts.einstellungtechnik.n} color={activePersona?.color ?? 'var(--story-accent-perspektive)'} />
   </ChartBlock>
 
   <ChartBlock title="Überwachungsgefühl (f6A3)" code="f6A3">
@@ -72,12 +72,13 @@
   </ChartBlock>
 
   <ChartBlock title="Vertrauen in Betreiber (f11b)" code="f11b">
-    <BarChart items={charts.vertrauenbetreiber.items} color={activePersona?.color ?? 'var(--story-accent-perspektive)'} />
+    <BarChart items={charts.vertrauenbetreiber.items} n={charts.vertrauenbetreiber.n} color={activePersona?.color ?? 'var(--story-accent-perspektive)'} />
   </ChartBlock>
 
   <ChartBlock title="Zustimmung Videoüberwachung nach Ort (f20)" code="f20">
     <BarChart
       items={charts.kamerazustimmungort.items}
+      n={charts.kamerazustimmungort.n}
       note="Anteil stimme uneingeschränkt zu"
       color={activePersona?.color ?? 'var(--story-accent-perspektive)'}
     />

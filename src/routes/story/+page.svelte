@@ -1,10 +1,12 @@
 <script lang="ts">
     import Section from "$story/Story.Section.svelte";
-    import StatBlock from "$story/Story.StatBlock.svelte";
     import charts from "$data/charts.json";
 
-    const wahrnehmung_F2A1 = charts.wahrnehmung.items.find(item => item.label === "F2A1");
+    const wahrnehmung = charts.wahrnehmung.items.find(item => item.code === 'f2A1')?.percent ?? 0;
     const überwachung = charts.überwachungsgefühl.percent;
+    const vertrauenPublic = (charts.vertrauenbetreiber.items.find(i => i.answer === '3')?.percent ?? 0)
+                          + (charts.vertrauenbetreiber.items.find(i => i.answer === '4')?.percent ?? 0);
+    const infobedürfnis = charts.infobedürfnis.percent;
 </script>
 
 <!-- To Do add color vars in css -->
@@ -26,20 +28,19 @@
 
     <div class="stat-grid">
         <div class="stat-card">
-            <div class="stat-card-number" style="color: var(--story-accent-wissen)">{wahrnehmung_F2A1}%</div>
+            <div class="stat-card-number" style="color: var(--story-accent-wissen)">{wahrnehmung}%</div>
             <div class="stat-card-label">nehmen Sensoren im Alltag wahr</div>
         </div>
         <div class="stat-card">
             <div class="stat-card-number" style="color: var(--story-accent-vertrauen)">{überwachung}%</div>
             <div class="stat-card-label">empfinden ein Überwachungsgefühl</div>
         </div>
-        <!--To Do Platzhalter auswechseln / Je eine Statistik pro Kategorie-->
         <div class="stat-card">
-            <div class="stat-card-number" style="color: var(--story-accent-kameras)">51%</div>
-            <div class="stat-card-label">vertrauen öffentlichen Betreibern</div>
+            <div class="stat-card-number" style="color: var(--story-accent-kameras)">{vertrauenPublic}%</div>
+            <div class="stat-card-label">vertrauen eher öffentlichen Betreibern</div>
         </div>
         <div class="stat-card">
-            <div class="stat-card-number" style="color: var(--story-accent-perspektive)">3 von 4</div>
+            <div class="stat-card-number" style="color: var(--story-accent-perspektive)">{infobedürfnis}%</div>
             <div class="stat-card-label">wollen mehr Informationen über Sensoren</div>
         </div>
     </div>
