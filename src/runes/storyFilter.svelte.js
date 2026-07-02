@@ -1,4 +1,4 @@
-import { recomputeColumns, mapCharts } from '$utils/surveyData'
+import { getColumns, mapCharts } from '../scripts/charts'
 import _allRows from '$data/rows.json'
 import _allCols from '$data/columns.json'
 
@@ -36,7 +36,7 @@ class StoryFilter {
   get allN() { return _allRows.length }
 
   get charts() {
-    return mapCharts(recomputeColumns(this.filteredRows, colsMeta))
+    return mapCharts(getColumns(this.filteredRows, colsMeta))
   }
 
   selectPersona(id, personaFilters) {

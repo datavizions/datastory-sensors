@@ -1,14 +1,13 @@
 <script lang="ts">
     import Section from "$story/Story.Section.svelte";
-    import StatBlock from "$story/Story.StatBlock.svelte";
     import ChartBlock from "$story/Story.ChartBlock.svelte";
     import PersonaCard from "$story/Story.PersonaCard.svelte";
     import BarChart from "$components/figure/Figure.BarChart.svelte";
     import Donut from "$components/figure/Figure.Donut.svelte";
+    import Stat from "$components/figure/Figure.Stat.svelte";
     import charts from "$data/charts.json";
 
     import {PERSONAS} from "$data/personas";
-	import { percentage } from "../../../scripts/charts";
 
     const barbara = PERSONAS.find(persona => persona.id === 'barbara')!
     const percentageSafety = charts.kamerabedeutung.items.find(item => item.answer === '1')?.percent ?? 0;
@@ -18,7 +17,7 @@
 
 <!-- add structure for first persona setup -->
 
-<Section accent="#9B7FD4" eyebrow="02 · FOKUS KAMERAS" next="/story/personas">
+<Section accent="#9B7FD4" eyebrow="03 · FOKUS KAMERAS" next="/story/personas" btnLabel="Weiter: Persona-Filter">
     <h2>Sicherheit oder Überwachung?</h2>
       <p class="intro">
         Kameras sind die bekanntesten und umstrittensten Sensoren. 
@@ -27,15 +26,15 @@
 
       <hr />
 
-    <PersonaCard persona={barbara} compact />
+    <PersonaCard persona={barbara} expanded />
 
     <div class="stat-row">
         <div class="stat-mini">
-            <div class="stat-mini-number" style="color: var(--red)">{percentageSafety}%</div>
-            <div class="stat-mini-label">nehmen Sensoren im Alltag wahr</div>
+            <div class="stat-mini-number">{percentageSafety}%</div>
+            <div class="stat-mini-label">sehen in mehr Videoüberwachung eher Sicherheit</div>
         </div>
         <div class="stat-mini">
-            <div class="stat-mini-number" style="color: var(--red)">{percentageBedenken}%</div>
+            <div class="stat-mini-number">{percentageBedenken}%</div>
             <div class="stat-mini-label">finden automatische KI-Ortsverfolgung bedenklich</div>
         </div>
     </div>
@@ -46,10 +45,11 @@
     </ChartBlock>
 
     <ChartBlock title="Zustimmung nach Ort (f20)" code="f20">
-        <BarChart items={charts.kamerazustimmungort.items} n={charts.kamerazustimmungort.n} />
+        <BarChart items={charts.kamerazustimmungort.items} n={charts.kamerazustimmungort.n} color="#9B7FD4" />
     </ChartBlock>
 
-    <ChartBlock title="Verhaltensanpassung((f19A3/f23A4)" code="f19/f23">
+    <ChartBlock title="Verhaltensanpassung (f19A3/f23A4)" code="f19/f23">
+        <Stat {...charts.verhaltensanpassung} color="#9B7FD4" />
     </ChartBlock>
 </Section>
 
@@ -91,9 +91,4 @@
         line-height: 1;
         color: var(--story-accent-kameras);
     }
-    .stat-mini-text {
-        font-size: 0.9rem;
-        color: var(--story-on-bg);
-    }
-   
 </style>

@@ -24,10 +24,10 @@
 
   <hr />
 
-  <PersonaCard persona={emre} compact />
+  <PersonaCard persona={emre} expanded />
 
   <StatBlock
-    stat="{percentPublic} %"
+    stat={`${percentPublic} %`}
     text="der Befragten vertrauen eher öffentlichen Betreibern bei der datenschutzkonformen Verarbeitung."
     source="Quelle: ÖFIT 2023, f11b"
   />

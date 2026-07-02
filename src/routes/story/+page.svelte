@@ -67,13 +67,13 @@
                 </li>
                 <li>
                     <span class="dot" style="background: var(--story-accent-personas)"></span>
-                    <a href="/story/personas"><strong>Personas erkunden</strong></a>
-                    <span class="content-table-description">Drei Perspektiven</span>
+                    <a href="/story/personas"><strong>Persona-Filter</strong></a>
+                    <span class="content-table-description">Drei Perspektiven erkunden</span>
                 </li>
                 <li>
                     <span class="dot" style="background: var(--story-accent-perspektive)"></span>
-                    <a href="/story/perspektive"><strong>Eigener Blick</strong></a>
-                    <span class="content-table-description">Erkunde Deine Gruppe</span>
+                    <a href="/story/perspektive"><strong>Persönliche Filter</strong></a>
+                    <span class="content-table-description">Eigene Gruppe auswählen</span>
                 </li>
             </ul>
     </div>

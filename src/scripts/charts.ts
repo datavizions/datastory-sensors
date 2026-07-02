@@ -1,4 +1,3 @@
-import { describe } from "node:test"
 import { answers } from "./repsonses"
 
 export interface Answers {

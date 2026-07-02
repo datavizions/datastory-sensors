@@ -70,7 +70,7 @@
     <div class="persona-avatar">{persona.emoji}</div>
     <div class="persona-info">
         <div class="persona-card-name">{persona.name}, {persona.age}</div>
-        <div class="persona-card-role">{persona.gender}, {persona.job}</div>
+        <div class="persona-card-role">{persona.gender} • {persona.job}</div>
         <div class="persona-card-tag">{persona.tag}</div>
     </div>
     {#if !compact}
@@ -83,51 +83,68 @@
     .persona-card {
         width: 100%;
         display: flex;
-        align-items: center;
-        gap: 0.7rem;
-        padding: 0.8rem;
-        border-radius: 0.5rem;
-        background-color: var(--story-surface);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.85rem;
+        padding: 1.15rem 1rem 1rem;
+        border-radius: 1.35rem;
+        background-color: color-mix(in srgb, var(--p) 5%, var(--story-surface));
         color: var(--story-on-bg);
-        border: 2px solid transparent;
+        border: 1px solid color-mix(in srgb, var(--p) 28%, transparent);
         cursor: pointer;
+        text-align: left;
     }
 
     .persona-selected {
         border-color: var(--p);
+        box-shadow: 0 0 0 2px color-mix(in srgb, var(--p) 35%, transparent);
     }
 
     .persona-avatar {
-        font-size: 2rem;
-        width: 2rem;
-        height: 2rem;
+        font-size: 2.65rem;
+        width: 5rem;
+        height: 5rem;
         display: flex;
         align-items: center;
         justify-content: center;    
         flex-shrink: 0;
-        background-color: color-mix(in srgb, var(--color-on-bg) 10%, transparent);
+        background-color: color-mix(in srgb, var(--p) 20%, transparent);
         border-radius: 50%;
+        align-self: center;
     }
 
     .persona-info {
         flex: 1;
+        width: 100%;
     }
 
     .persona-card-name {
-        font-weight: 600;
-        font-size: 0.9rem;
+        font-weight: 700;
+        font-size: clamp(1.05rem, 2vw, 1.25rem);
+        line-height: 1.15;
         color: var(--p);
+        margin-bottom: 0.35rem;
     }
 
     .persona-card-role {
-        font-size: 0.8rem;
-        color: color-mix(in srgb, var(--color-on-bg) 10%, transparent);
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        font-weight: 600;
+        color: color-mix(in srgb, var(--story-on-bg) 58%, transparent);
+        margin-bottom: 0.7rem;
     }
 
     .persona-card-tag {
-        font-size: 0.7rem;
-        background: color-mix(in srgb, var(--color-on-bg) 10%, transparent);
+        display: inline-flex;
+        align-items: center;
+        min-height: 1.85rem;
+        padding: 0.18rem 0.7rem;
+        border-radius: 0.55rem;
+        font-size: 0.72rem;
+        font-weight: 700;
+        background: color-mix(in srgb, var(--p) 14%, transparent);
         color: var(--p);
+        font-family: var(--font-sans);
     }
 
     .persona-card-badge {
@@ -138,11 +155,27 @@
         color: var(--story-bg);
         font-size: 0.7rem;
         font-weight: 600;
+        display: none;
     }
 
     .persona-compact .persona-info,
     .persona-compact .persona-card-badge {
         display: none;
+    }
+
+    .persona-compact {
+        padding: 0.55rem;
+        min-height: 0;
+        border-radius: 999px;
+        width: auto;
+        gap: 0;
+        align-items: center;
+    }
+
+    .persona-compact .persona-avatar {
+        width: 2.6rem;
+        height: 2.6rem;
+        font-size: 1.65rem;
     }
 
     .persona-story {
