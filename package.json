@@ -4,6 +4,8 @@
 	"scripts": {
 		"gdoc": "node tasks/fetch-google.js",
 		"style": "node tasks/style-dictionary.js",
+		"test": "vitest run",
+		"test:watch": "vitest",
 		"data:sample": "npx tsx src/scripts/pipeline.ts src/data/Daten_Werte_Sensoren_sample.csv src/data/rows.sample.json src/data/columns.sample.json && npx tsx src/scripts/mapper.ts src/data/columns.sample.json src/data/charts.sample.json",
 		"data:full": "npx tsx src/scripts/pipeline.ts src/data/Daten_Werte_Sensoren.csv src/data/rows.full.json src/data/columns.full.json && npx tsx src/scripts/mapper.ts src/data/columns.full.json src/data/charts.full.json",
 		"data:all": "npm run data:sample && npm run data:full",

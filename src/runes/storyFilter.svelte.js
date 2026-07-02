@@ -17,11 +17,9 @@ class StoryFilter {
     const f = this.filters
     const activeKeys = Object.keys(f).filter(k => f[k] != null)
     if (activeKeys.length === 0) return _allRows
-    const matched = _allRows.filter(row =>
+    return _allRows.filter(row =>
       activeKeys.every(k => String(row[k]) === String(f[k]))
     )
-    // fallback full dataset
-    return matched.length > 0 ? matched : _allRows
   }
 
   get n() {

@@ -6,6 +6,7 @@ declare module '$runes/storyFilter.svelte.js' {
   }
 
   export interface StoryFilter {
+    filters: Record<string, string>
     charts: StoryFilterCharts
     n: number
     selectedPersonaId: string | null
