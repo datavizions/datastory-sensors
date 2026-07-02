@@ -27,56 +27,64 @@
 
     let width = $state(0);
 
-    const barHeight = 24;
-    const gap = 8;
-    const labelWidth = 150;
-    const labelHeight = 40;
+    const barHeight = 20;
+    const gap = 6;
+    const labelHeight = 38;
     const percentageWidth = 50;
-    const margin = {top: 4, right: 8, bottom: 4, left: 4};
-    const rowHeight = barHeight + labelHeight +gap;
+    const margin = {top: 2, right: 8, bottom: 2, left: 2};
+    const rowHeight = barHeight + labelHeight + gap;
 
     const innerWidth = $derived(Math.max(width - percentageWidth - margin.left - margin.right, 0));
-    const svgHeight = $derived(items.length * rowHeight + margin.top + margin.bottom);
+    const visibleItems = $derived(items.filter((item) => item.percent > 0));
+    const svgHeight = $derived(visibleItems.length * rowHeight + margin.top + margin.bottom);
 
     const xScale = $derived(scaleLinear().domain([0, 100]).range([0, innerWidth]).clamp(true));
 
-    const sorted = $derived([...items].sort((a, b) => b.percent - a.percent));
+    const sorted = $derived(
+        [...visibleItems]
+            .sort((a, b) => b.percent - a.percent)
+    );
+
+    function cleanLabel(label: string): string {
+        return String(label)
+            .replace(/^[-–—]\s*/, '')
+            .replace(/^\t+/, '')
+            .trim();
+    }
 
 </script>
 
 <div class="barchart" bind:clientWidth={width}>
     {#if title}
         <p class="bar-title">{title}</p>
+    {/if}
     <svg width={width} height={svgHeight} aria-label={title}>
             <g transform={`translate(${margin.left}, ${margin.top})`}>
             {#each sorted as item, i }
              {@const y = i * rowHeight}
              {@const barW = xScale(item.percent)}
+                 {@const tone = Math.max(40, 76 - i * 8)}
 
              <!-- label -->
                 <!-- bar -->
-                <rect x={0} y={y} width={innerWidth} height={barHeight-10} fill="var(--color-gray-100, #EEEEEE)" rx="3"/>
+                     <rect x={0} y={y} width={innerWidth} height={barHeight} fill="color-mix(in srgb, var(--story-on-bg) 12%, transparent)" rx="5"/>
 
                 <!-- bar filling -->
-                <rect x={0} y={y} width={barW} height={barHeight-10} fill={color} rx="3"/>
+                     <rect x={0} y={y} width={barW} height={barHeight} fill={`color-mix(in srgb, ${color} ${tone}%, transparent)`} rx="5"/>
 
                 <!-- percentage label -->
-                 <text x={innerWidth + 5} y={y + barHeight / 2 +1} dominant-baseline="middle" class="bar-percentage">{item.percent}%</text>
+                      <text x={innerWidth + 6} y={y + barHeight / 2 + 1} dominant-baseline="middle" class="bar-percentage">{item.percent}%</text>
 
-                 <!-- label below -->
-                <text x={0} y={y + barHeight + 12} dominant-baseline="hanging" class="bar-percentage"></text>
-
-                <foreignObject x="0" y={y} width={innerWidth} height={labelHeight}>
-                <div class="bar-label">{item.label}</div>
+                <foreignObject x="0" y={y + barHeight + 5} width={innerWidth} height={labelHeight}>
+                <div class="bar-label">{cleanLabel(item.label)}</div>
                 </foreignObject>
             {/each}
         </g>
     </svg>
-    {/if}
 
     {#if note || n}
         <p class="bar-note">
-            {#if n} n = {n} {note ? '.' : ''}{/if}{note}
+            {#if n}n = {n} Anzahl der Befragten{note ? ' · ' : ''}{/if}{note}
         </p>
     {/if}
 </div>
@@ -85,37 +93,41 @@
 <style>
     .barchart {
         width: 100%;
-        font-family: sans-serif;
+        font-family: var(--font-sans);
         font-size: 0.9rem;
     }
 
     .bar-title {
+        font-family: var(--font-mono);
+        font-size: 0.82rem;
         font-weight: 600;
-        margin-bottom: 0.5em;
+        margin-bottom: 0.75rem;
+        color: color-mix(in srgb, var(--story-on-bg) 60%, transparent);
     }
 
     .bar-label {
-        font-size: 0.8em;
-        line-height: 1.2em;
-        padding-top: 1.5em;
-        display: flex;
-        align-items: flex-start;
-        padding-right: 0.5rem;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        color: var(--color-gray);
+        font-size: 0.76rem;
+        line-height: 1.14;
+        padding-top: 0;
+        padding-right: 0.7rem;
+        overflow: visible;
+        white-space: normal;
+        word-break: break-word;
+        color: color-mix(in srgb, var(--story-on-bg) 65%, transparent);
     }
 
     .bar-percentage {
-        font-size: 0.8em;
-        fill: var(--color-gray);
+        font-family: var(--font-mono);
+        font-size: 0.8rem;
+        fill: color-mix(in srgb, var(--story-on-bg) 60%, transparent);
     }
 
     .bar-note {
-        font-size: 0.8em;
-        margin-top: 0.5em;
-        color: var(--color-gray);
+        font-family: var(--font-mono);
+        font-size: 0.78rem;
+        margin-top: 0.75rem;
+        color: color-mix(in srgb, var(--story-on-bg) 35%, transparent);
+        text-align: center;
     }
 
 </style>

@@ -24,10 +24,10 @@
 
   <hr />
 
-  <PersonaCard persona={emre} compact />
+  <PersonaCard persona={emre} expanded />
 
   <StatBlock
-    stat="{percentPublic} %"
+    stat={`${percentPublic} %`}
     text="der Befragten vertrauen eher öffentlichen Betreibern bei der datenschutzkonformen Verarbeitung."
     source="Quelle: ÖFIT 2023, f11b"
   />
@@ -45,6 +45,7 @@
 
   <ChartBlock title="Haltung zu Datenschutz und Datennutzung (f10)" code="f10">
     <BarChart items={charts.datenschutzhaltung.items} note={charts.datenschutzhaltung.note}
+      n={charts.datenschutzhaltung.n}
       color="var(--story-accent-vertrauen)" />
   </ChartBlock>
 
@@ -55,6 +56,7 @@
         percent: item.distribution.find(d => d.answer === '1')?.percent ?? 0,
         count: item.distribution.find(d => d.answer === '1')?.count ?? 0
       }))}
+      n={charts.akzeptanzmaßnahmen.n}
       note="Anteil: Erhöht Zustimmung"
       color="var(--story-accent-vertrauen)"
     />

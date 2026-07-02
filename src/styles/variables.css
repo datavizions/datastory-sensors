@@ -47,4 +47,25 @@
   --96px: 6rem;
   --112px: 7rem;
   --128px: 8rem;
+  --story-bg: #0d1b2a;
+  --story-surface: #122030;
+  --story-on-bg: #ffffff;
+  --story-accent-wissen: #2DD4BF;
+  --story-accent-vertrauen: #E07B39;
+  --story-accent-kameras: #9B7FD4;
+  --story-accent-perspektive: #F5C842;
+  --story-accent-vertrauen-2: #c75e1f;
+  --story-accent-vertrauen-3: #a04a18;
+  --story-accent-vertrauen-4: #7a3811;
+  --story-accent-vertrauen-5: #4a2409;
+  --story-accent-kameras-2: #7a5fb5;
+  --story-accent-kameras-3: #5e4490;
+  --story-accent-kameras-4: #432e6b;
+  --story-accent-kameras-5: #2c1d48;
+  --story-accent-perspektive-2: #c4a030;
+  --story-accent-perspektive-3: #8a6f1e;
+  --story-accent-perspektive-4: #4a3a08;
+  --story-accent-perspektive-5: #2a2005;
+  --story-accent-persona-2: #7a6010;
+  --story-accent-personas: #e6edf3;
 }

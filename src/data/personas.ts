@@ -14,7 +14,7 @@ export const PERSONAS = [
         quote2: '... Wenn die mich aufzeichnen, wars das mit dem Spot.',
         summary: 'Ich will wissen, wer mich warum aufzeichnet.',
         subline: 'Student, Teilzeit-Job, skeptisch gegenüber Bewachung.',
-        filters: {s1: '1', s2neu: '2'}
+        filters: {s1: '1', s2neu: '2', s6: '8'}
     },
     {
         id: 'emre',
@@ -31,7 +31,7 @@ export const PERSONAS = [
         quote2: '... Aber einem Konzern? Da bin ich skeptisch ...',
         summary: 'Wenn es die Sicherheit erhöht, bin ich dabei.',
         subline: 'Vollzeit angestellt, 2-Personen-Haushalt, pragmatisch',
-        filters: {s1: '1', s2neu: '4'}
+        filters: {s1: '1', s2neu: '4', s6: '1'}
     },
     {
         id: 'barbara',
@@ -44,10 +44,10 @@ export const PERSONAS = [
         emoji: '👩🏻‍🦳',
         scene: 'Stadtpark',
         narrative: 'Barbara geht durch den Park. Überall hängen Kameras. Sie fühlt sich beobachtet.',
-        quote: 'Wenn es passiert, bin ich froh, dass eine Kamera da ist.',
+        quote: 'Wenn etwas passiert, bin ich froh, dass eine Kamera da ist.',
         quote2: 'Aber ich passe trotzdem auf, wie ich mich verhalte. Das ist komisch.',
         subline: 'Beamte, 1-Personen-Haushalt, aufmerksam',
-        filters: {s1: '2', s2neu: '6'}
+        filters: {s1: '2', s2neu: '6', s6: '2'}
     },
     {
         id: 'valentina',
@@ -63,7 +63,7 @@ export const PERSONAS = [
         quote: 'Mein Handy weiß eh alles über mich.',
         quote2: 'Eine Kamrea mehr macht da auch keinen Unterschied.',
         subline: 'Schülerin, digital native, unbesorgt',
-        filters: {s1: '2', s2neu: '1'}
+        filters: {s1: '2', s2neu: '1', s6: '6'}
     }
     
 ]

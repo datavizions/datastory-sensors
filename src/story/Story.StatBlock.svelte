@@ -46,13 +46,14 @@
         font-weight: 600;
         line-height: 1.2;
         color: var(--story-on-bg);
-        margin-bottom: 0;
+        margin-bottom: 0.35rem;
     }
 
     .stat-block-source {
-        font-size: 0.8em;
-        font-family: var(--font-sans);
-        color: color-mix(in srgb, var(--story-on-bg) 25%, transparent);
+        font-size: 0.72rem;
+        font-family: var(--font-mono);
+        color: color-mix(in srgb, var(--story-on-bg) 55%, transparent);
+        line-height: 1.2;
         margin: 0;
     }
 </style>

@@ -50,10 +50,10 @@
     "128px": "8rem"
   },
   "story": {
-    "bg":"#0d1b2a",
-    "on-bg":"#ffffff",
-    "surface":"#122030",
-    "accent-wissen": "#2dd4bf",
+    "bg": "#0d1b2a",
+    "surface": "#122030",
+    "on-bg": "#ffffff",
+    "accent-wissen": "#2DD4BF",
     "accent-vertrauen": "#E07B39",
     "accent-kameras": "#9B7FD4",
     "accent-perspektive": "#F5C842",
@@ -69,6 +69,7 @@
     "accent-perspektive-3": "#8a6f1e",
     "accent-perspektive-4": "#4a3a08",
     "accent-perspektive-5": "#2a2005",
-    "accent-persona-2": "#7a6010"
+    "accent-persona-2": "#7a6010",
+    "accent-personas": "#e6edf3"
   }
 }

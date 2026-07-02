@@ -17,7 +17,7 @@
 <div class="chart-block">
     <div class="chart-block-header">
         <span class="chart-block-title">{title}</span>
-        {#if code}
+        {#if false && code}
             <span class="chart-block-badge">{code}</span>
         {/if}
     </div>
@@ -32,11 +32,14 @@
 
 <style>
     .chart-block {
+        display: flex;
+        flex-direction: column;
         gap: 0.5rem;
-        padding: 1rem;
+        padding: 0;
         color: var(--story-on-bg);
         background-color: var(--story-surface);
-        border-left: 4px solid var(--accent);
+        border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+        border-radius: 1.25rem;
         overflow: hidden;
     }
 
@@ -45,30 +48,31 @@
         justify-content: space-between;
         align-items: flex-start;
         gap: 0.5rem;
-        border-bottom: 1px solid color-mix(in srgb, var(--color-on-bg) 10%, transparent);
+        padding: 0.8rem 1rem 0.5rem;
+        border-bottom: 1px solid color-mix(in srgb, var(--story-on-bg) 12%, transparent);
     }
 
     .chart-block-title {
         font-family: var(--font-mono);
-        font-size: 0.8em;
+        font-size: 0.78rem;
         font-weight: 600;
-        color: color-mix(in srgb, var(--color-on-bg) 10%, transparent);
+        letter-spacing: 0.02em;
+        color: color-mix(in srgb, var(--story-on-bg) 55%, transparent);
     }
 
     .chart-block-badge {
-        font-size: 0.6em;
+        font-size: 0.68rem;
         font-weight: 600;
-        background-color: var(--accent, var(--strory-accent-wissen));
-        color: var(--story-bg);
+        background-color: color-mix(in srgb, var(--accent) 22%, transparent);
+        color: var(--accent);
         flex-shrink: 0;
         white-space: nowrap;
-        padding: 0.2rem 0.5rem;
-        border-radius: 0.25rem;
-        color: var(--color-gray);
+        padding: 0.28rem 0.6rem;
+        border-radius: 0.45rem;
     }
 
     .chart-block-body {
-        padding: 0.9rem 0 0 0;
+        padding: 0.55rem 1rem 0.9rem;
     }
 
     .chart-block-placeholder {
@@ -76,6 +80,6 @@
         font-weight: 400;
         font-family: var(--font-sans);
         padding: 1.5rem 0;
-        color: color-mix(in srgb, var(--color-on-bg) 25%, transparent);
+        color: color-mix(in srgb, var(--story-on-bg) 25%, transparent);
     }
 </style>

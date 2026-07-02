@@ -39,7 +39,7 @@
         gap: 1rem;
         padding: 2rem 1rem;
         background: var(--story-bg);
-        color: var(--story-onbg);
+        color: var(--story-on-bg);
     }
 
     .section-eyebrow {
@@ -60,11 +60,16 @@
     }
 
     .section-next {
-        display: inline-block;
-        padding: 0.5rem 1rem;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 1rem;
         background: var(--accent);
         color: var(--story-bg);
         text-decoration: none;
-        border-radius: 4px;
+        border-radius: 0.75rem;
+        font-weight: 700;
+        font-size: 1rem;
     }
 </style>

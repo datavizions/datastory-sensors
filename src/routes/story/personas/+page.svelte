@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onMount } from 'svelte'
   import Section from '$story/Story.Section.svelte'
   import ChartBlock from '$story/Story.ChartBlock.svelte'
   import PersonaCard from '$story/Story.PersonaCard.svelte'
@@ -7,14 +8,67 @@
   import { PERSONAS } from '$data/personas.js'
   import { storyFilter } from '$runes/storyFilter.svelte.js'
 
+  const FILTER_LABELS: Record<string, string> = {
+    s1: 'Geschlecht',
+    s2neu: 'Alter',
+    s6: 'Tätigkeit'
+  }
+
+  const FILTER_VALUE_LABELS: Record<string, Record<string, string>> = {
+    s1: {
+      '1': 'männlich',
+      '2': 'weiblich'
+    },
+    s2neu: {
+      '1': '16-19',
+      '2': '20-29',
+      '3': '30-39',
+      '4': '40-49',
+      '5': '50-59',
+      '6': '60-69',
+      '7': '70 und älter'
+    },
+    s6: {
+      '1': 'Berufstätig in Vollzeit',
+      '2': 'Berufstätig in Teilzeit',
+      '3': 'Auszubildende/r',
+      '4': 'Arbeitslos',
+      '5': 'Rentner, Pensionär',
+      '6': 'Schüler',
+      '7': 'Fachschüler',
+      '8': 'Student',
+      '9': 'Hausfrau/-mann / Elternzeit',
+      '10': 'Bundesfreiwilligendienst / FSJ / FÖJ'
+    }
+  }
+
+  function formatFilter(key: string, value: string) {
+    const label = FILTER_LABELS[key] ?? key
+    const displayValue = FILTER_VALUE_LABELS[key]?.[value] ?? value
+    return `${label} (${key}): ${displayValue}`
+  }
+
+  function personaPalette(color: string) {
+    return [
+      color,
+      `color-mix(in srgb, ${color} 82%, black 18%)`,
+      `color-mix(in srgb, ${color} 66%, black 34%)`,
+      `color-mix(in srgb, ${color} 52%, black 48%)`,
+    ]
+  }
+
   let charts = $derived(storyFilter.charts)
   let n = $derived(storyFilter.n)
   let activeId = $derived(storyFilter.selectedPersonaId)
 
-  const activePersona = $derived(PERSONAS.find(p => p.id === activeId) ?? PERSONAS[0])
+  const activePersona = $derived(activeId ? PERSONAS.find(p => p.id === activeId) ?? null : null)
+
+  onMount(() => {
+    storyFilter.clearFilters()
+  })
 </script>
 
-<Section accent="var(--story-accent-perspektive)" eyebrow="EXPLORATION" next="/story/perspektive">
+<Section accent="var(--story-accent-perspektive)" eyebrow="4 · PERSONAS ERKUNDEN" next="/story/perspektive" btnLabel="Weiter: Persönliche Filter">
   <h2>Personas erkunden</h2>
   <p class="intro">
     Wähle eine Persona und entdecke, wie unterschiedliche Gruppen
@@ -37,51 +91,50 @@
       <p class="quote-text">{activePersona.summary}</p>
       <p class="quote-sub">{activePersona.subline}</p>
     </div>
+  {:else}
+    <div class="empty-state">
+      <div class="empty-state-arrow">↑</div>
+      <p class="empty-state-text">Wähle oben eine Persona, um die gefilterten Daten zu sehen.</p>
+    </div>
   {/if}
 
-  <div class="filter-info">
-    <span class="filter-label">FILTER</span>
-    {#if activePersona && activeId}
+  {#if activePersona && activeId}
+    <div class="filter-info">
+      <span class="filter-label">FILTER</span>
       {#each Object.entries(activePersona.filters) as [k, v]}
-        <span class="filter-tag">{k}: {v}</span>
+        <span class="filter-tag">{formatFilter(k, String(v))}</span>
       {/each}
-    {:else}
-      <span class="filter-tag filter-tag--all">alle Befragten</span>
-    {/if}
-    <span class="filter-n">
-      n = {n}
-      {#if n < 10}<span class="filter-n__warn"> · Kleiner Sample</span>{/if}
-    </span>
-  </div>
+      <span class="filter-n">
+        n = {n}
+        {#if n < 10}<span class="filter-n__warn"> · small sample</span>{/if}
+      </span>
+    </div>
 
-  <p class="results-label">ERGEBNISSE FÜR {activePersona?.name?.toUpperCase() ?? 'ALLE'}</p>
+    <p class="results-label">ERGEBNISSE FÜR {activePersona.name.toUpperCase()}</p>
 
-  <ChartBlock title="Einstellung zu Sensoren allgemein (f1)" code="f1">
-    <BarChart items={charts.einstellungtechnik.items} color={activePersona?.color ?? 'var(--story-accent-perspektive)'} />
-  </ChartBlock>
+    <ChartBlock title="Einstellung zu Sensoren allgemein (f1)" code="f1">
+      <BarChart items={charts.einstellungtechnik.items} n={charts.einstellungtechnik.n} color={activePersona.color} />
+    </ChartBlock>
 
-  <ChartBlock title="Überwachungsgefühl (f6A3)" code="f6A3">
-    <Donut items={charts.befindlichkeit.items.find((i: { code: string; distribution: { answer: string; label: string; count: number; percent: number }[] }) => i.code === 'f6A3_1')?.distribution ?? []}
-           colors={[
-             activePersona?.color ?? 'var(--story-accent-perspektive)',
-             'var(--story-accent-persona-2)',
-             'var(--story-accent-perspektive-4)',
-             'var(--story-accent-perspektive-5)'
-           ]}
-           size={160} />
-  </ChartBlock>
+    <ChartBlock title="Überwachungsgefühl (f6A3)" code="f6A3">
+      <Donut items={charts.befindlichkeit.items.find((i: { code: string; distribution: { answer: string; label: string; count: number; percent: number }[] }) => i.code === 'f6A3_1')?.distribution ?? []}
+             colors={personaPalette(activePersona.color)}
+             size={300} />
+    </ChartBlock>
 
-  <ChartBlock title="Vertrauen in Betreiber (f11b)" code="f11b">
-    <BarChart items={charts.vertrauenbetreiber.items} color={activePersona?.color ?? 'var(--story-accent-perspektive)'} />
-  </ChartBlock>
+    <ChartBlock title="Vertrauen in Betreiber (f11b)" code="f11b">
+      <BarChart items={charts.vertrauenbetreiber.items} n={charts.vertrauenbetreiber.n} color={activePersona.color} />
+    </ChartBlock>
 
-  <ChartBlock title="Zustimmung Videoüberwachung nach Ort (f20)" code="f20">
-    <BarChart
-      items={charts.kamerazustimmungort.items}
-      note="Anteil stimme uneingeschränkt zu"
-      color={activePersona?.color ?? 'var(--story-accent-perspektive)'}
-    />
-  </ChartBlock>
+    <ChartBlock title="Zustimmung Videoüberwachung nach Ort (f20)" code="f20">
+      <BarChart
+        items={charts.kamerazustimmungort.items}
+        n={charts.kamerazustimmungort.n}
+        note="Anteil stimme uneingeschränkt zu"
+        color={activePersona.color}
+      />
+    </ChartBlock>
+  {/if}
 </Section>
 
 <style>
@@ -90,6 +143,16 @@
     font-weight: 900;
     line-height: 1.15;
     margin: 0 0 0.75rem;
+    color: var(--story-on-bg);
+  }
+
+  :global(.section-eyebrow) {
+    color: color-mix(in srgb, var(--story-on-bg) 65%, transparent);
+  }
+
+  :global(.section-next) {
+    background: var(--story-surface);
+    color: var(--story-on-bg);
   }
 
   .intro {
@@ -128,6 +191,35 @@
     margin: 0;
   }
 
+  .empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    min-height: 13rem;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid color-mix(in srgb, var(--story-accent-perspektive) 20%, transparent);
+    background: color-mix(in srgb, var(--story-accent-perspektive) 4%, var(--story-surface));
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .empty-state-arrow {
+    font-size: 4rem;
+    line-height: 1;
+    color: color-mix(in srgb, var(--story-on-bg) 90%, transparent);
+  }
+
+  .empty-state-text {
+    max-width: 18rem;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: color-mix(in srgb, var(--story-on-bg) 65%, transparent);
+  }
+
   .filter-info {
     display: flex;
     align-items: center;
@@ -148,13 +240,8 @@
     background: var(--story-surface);
     color: var(--story-accent-perspektive);
     border: 1px solid color-mix(in srgb, var(--story-accent-perspektive) 30%, transparent);
-    border-radius: 0.25rem;
-    padding: 0.1rem 0.4rem;
-  }
-
-  .filter-tag--all {
-    color: color-mix(in srgb, var(--story-on-bg) 50%, transparent);
-    border-color: color-mix(in srgb, var(--story-on-bg) 15%, transparent);
+    border-radius: 999px;
+    padding: 0.28rem 0.65rem;
   }
 
   .filter-n__warn {

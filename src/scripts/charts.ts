@@ -1,4 +1,3 @@
-import { describe } from "node:test"
 import { answers } from "./repsonses"
 
 export interface Answers {
@@ -196,24 +195,28 @@ export function mapCharts(cols: Cols): Record<string, any> {
             type: 'bar',
             title: 'Wahrnehmung von Sensoren im öffentlichen Raum',
             note: 'Mehrfachnennung möglich',
+            n: totalSafe(col('f2A1')),
             items: barList(cols, ['f2A1', 'f2A2', 'f2A3', 'f2A5']),
         },
         sensortypen: {
             type: 'bar',
             title: 'Bekanntheitsgrad nach Sensortyp',
             note: 'Mehrfachnennung möglich',
+            n: totalSafe(col('f3A1')),
             items: barList(cols, ['f3A1', 'f3A2', 'f3A3', 'f3A4', 'f3A5', 'f3A6']),
         },
         wissensensoren: {
             type: 'bar',
             title: 'Wissen über die Funtionsweise von Sensoren',
             note: 'Mehrfachnennung möglich',
+            n: totalSafe(col('f4A1')),
             items: barList(cols, ['f4A1', 'f4A2', 'f4A3', 'f4A5', 'f4A6', 'f4A7', 'f4A8', 'f4A9', 'f4A10']),            
         },
         einstellungtechnik: {
             type: 'bar',
             title: 'Einstellung zu digitalen Technologien',
             note: 'Mehrfachnennung möglich',
+            n: totalSafe(col('f1')),
             items: answerbarList(col('f1'), {'1': 'Sehr positiv', '2': 'Eher positiv', '3': 'Eher negativ', '4': 'Sehr negativ', '9': 'Weiß nicht / keine Angabe'})            
         },
         überwachungsgefühl: {
@@ -235,6 +238,7 @@ export function mapCharts(cols: Cols): Record<string, any> {
             type: 'bargrouped',
             title: 'Einfluss von Maßnahmen auf Zustimmung zu Sensoren',
             answerLabels: Maßnahmen,
+            n: totalSafe(col('f8A1_1')),
             items: ['f8A1_1', 'f8A2_1','f8A3_1','f8A4_1', 'f8A5_1', 'f8A6_1', 'f8A7_1', 'f8A8_1', 'f8A9_1']
             .filter(c => col(c))
             .map(code => ({code, label: col(code).label, distribution: distribution(col(code), Maßnahmen)}))
@@ -243,6 +247,7 @@ export function mapCharts(cols: Cols): Record<string, any> {
             type: 'bar',
             title: 'Haltung zu Datenschutz und Datennutzung',
             note: 'Mehrfachnennung möglich',
+            n: totalSafe(col('f10A1')),
             items: barList(cols, ['f10A1', 'f10A2', 'f10A3', 'f10A5', 'f10A6']),            
         },
         vertrauenbetreiber: {
@@ -250,6 +255,7 @@ export function mapCharts(cols: Cols): Record<string, any> {
             title: 'Vertrauen in öffentliche vs private Betreiber',
             note: 'Nur die, die Einfluss auf Betreiber bestätigen (f11 = 1)', //wichtig
             description: 'Anteil: trifft voll zu + trifft eher zu',
+            n: totalSafe(col('f11')),
             items: distribution(col('f11'), {
                 '1': 'Nur privaten Betreibern', 
                 '2': 'Eher privaten Betreibern', '3': 'Eher öffentlichen Betreibern', '4': 'Nur öffentlichen Betreibern', '5': 'Weiß nicht',
@@ -274,6 +280,7 @@ export function mapCharts(cols: Cols): Record<string, any> {
             type: 'bar',
             title: 'Zustimmung zu Videoüberwachung je nach Ort',
             answerLabels: Zustimmung,
+            n: totalSafe(col('f20A1_1')),
             items: multibarList(cols, ['f20A1_1', 'f20A2_1','f20A3_1','f20A4_1', 'f20A5_1', 'f20A6_1', 'f20A7_1', 'f20A8_1', 'f20A9_1', 'f20A10_1', 'f20A11_1'])
 
         },
